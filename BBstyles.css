@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: verdana;
+  font-size: 16px;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 1fr 40% 1fr;
+  grid-template-columns: repeat(3,1fr);
+  height: auto;
+  justify-content: center;
+}
+
+.box {
+
+}
+
+.top-buffer {
+grid-area: 1 / 2 / span 1 / span 1;
+padding: 15%;
+}
+
+.button {
+background-color: #15599d;
+color: white;
+grid-area: 2 / 2 / span 1 / span 1;
+width: 300px;
+height: 300px;
+text-align: center;
+padding: 20px 5px 10px 5px;
+justify-self: center;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+-webkit-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+-moz-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+border-radius: 10px;
+z-index: 2;
+animation-name: none;
+animation-duration: 1s;
+}
+
+.inputs {
+  background-color:#E7E7E7;
+  color: #15599d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.75rem;
+  grid-area: 2 / 2 / span 1 / span 1;
+  width: 301px;
+  height: 301px;
+  padding-top: 8px;
+  text-align: center;
+  justify-self: center;
+  border-radius: 9px;
+  -webkit-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+  -moz-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+  box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+  z-index: 1;
+  animation-name: none;
+  animation-duration: 1s;
+}
+
+
+/*Flip animation - START - keyframes*/
+
+@-webkit-keyframes flip-2-hor-top-bck {
+  0% {
+    -webkit-transform: translateY(0) translateZ(0) rotateX(0);
+            transform: translateY(0) translateZ(0) rotateX(0);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+  }
+  100% {
+    -webkit-transform: translateY(-100%) translateZ(-260px) rotateX(180deg);
+            transform: translateY(-100%) translateZ(-260px) rotateX(180deg);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+}
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes flip-in-ver-right {
+  0% {
+    -webkit-transform: rotateY(-80deg);
+            transform: rotateY(-80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+    opacity: 1;
+  }
+}
+
+/*Flip animation - END - keyframes*/
+
+
+/* landing card */
+.title-logo {
+  margin: 15px auto;
+  display: block;
+}
+
+#Banjo {
+  width: 80px;
+  padding-bottom: -10px;
+}
+
+#Golf {
+  width: 20px;
+  padding-bottom: 10px;
+  margin-top: 15px;
+}
+
+#Bluegrass-font {
+font-family: 'Rye', cursive;
+font-size: 22px;
+letter-spacing: 0.9px;
+}
+
+#click {
+  color: white;
+  padding: -10px 10px 10px 10px;
+  font-size: 0.65rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* inputs card */
+
+#title-dismiss {
+  width: 20px;
+  margin-left: 250px;
+  margin-top: 10px;
+  margin-bottom: -20px
+}
+
+#username {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Rye', cursive;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #15599d;
+  margin: 5px 5px 2px 5px;
+
+}
+
+#username-box {
+  margin: 5px 5px 2px 5px;
+  padding: 5px;
+}
+
+#password {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Rye', cursive;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #15599d;
+  margin: 2px 8px 5px 5px;
+
+}
+
+#password-box {
+  margin: 2px 1px 5px 5px;
+  padding: 5px;
+}
+
+/* -HOMEPAGE STYLING */
+
+.construction {
+  color: #15599d;
+  grid-area: 2 / 2 / span 1 / span 1;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  justify-self: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  -webkit-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+  -moz-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+  box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+  border: 2px solid #15599d;
+  border-radius: 10px;
+  font-weight: bold;
+  }
+
+#engineer {
+  margin: auto;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  width: 150px;
+  display: block;
+}
+
+#return-home {
+  margin-top: 10px;
+  margin-left: 265px;
+  width: 20px;
+  display: block;
+}
+
+
+@media only screen and (max-width: 1080px) {
+
+
+}
