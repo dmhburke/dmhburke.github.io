@@ -10,61 +10,58 @@ body {
 }
 
 .main {
-  display: grid;
-  grid-template-rows: 1fr 40% 1fr;
-  grid-template-columns: repeat(3,1fr);
-  height: auto;
-  justify-content: center;
+display: grid;
+grid-template-columns: 1fr 325px 1fr;
+grid-template-rows: 1fr 325px 4fr;
+height: 1000px;
+width: 100%;
+justify-content: center;
+
 }
 
 .box {
-
+width: 100%;
+text-align: center;
+text-transform: uppercase;
+letter-spacing: 0.1px;
+-webkit-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+-moz-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+border-radius: 20px;
 }
 
-.top-buffer {
-grid-area: 1 / 2 / span 1 / span 1;
-padding: 15%;
+.box p {
+  margin: auto;
+  margin-top: 10%;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .button {
 background-color: #15599d;
 color: white;
 grid-area: 2 / 2 / span 1 / span 1;
-width: 300px;
-height: 300px;
-text-align: center;
-padding: 20px 5px 10px 5px;
-justify-self: center;
-text-transform: uppercase;
-letter-spacing: 0.5px;
--webkit-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
--moz-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
-border-radius: 10px;
 z-index: 2;
 animation-name: none;
 animation-duration: 1s;
 }
 
 .inputs {
-  background-color:#E7E7E7;
-  color: #15599d;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-size: 0.75rem;
-  grid-area: 2 / 2 / span 1 / span 1;
-  width: 301px;
-  height: 301px;
-  padding-top: 8px;
-  text-align: center;
-  justify-self: center;
-  border-radius: 9px;
-  -webkit-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
-  -moz-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
-  box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
-  z-index: 1;
-  animation-name: none;
-  animation-duration: 1s;
+font-size: 2rem;
+background-color:#E7E7E7;
+color: #15599d;
+grid-area: 2 / 2 / span 1 / span 1;
+border: 1px solid white;
+z-index: 1;
+animation-name: none;
+animation-duration: 1s;
+}
+
+.box p {
+  margin: auto;
+  margin-top: 10%;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 
@@ -121,72 +118,71 @@ animation-duration: 1s;
 }
 
 #Banjo {
-  width: 80px;
-  padding-bottom: -10px;
+  width: 20%;
 }
 
 #Golf {
-  width: 20px;
-  padding-bottom: 10px;
-  margin-top: 15px;
+  width: 10%;
+  margin-top: 10%;
+}
+
+.inputs #Golf {
+  width: 10%;
+  margin-top: -5px;
 }
 
 #Bluegrass-font {
 font-family: 'Rye', cursive;
-font-size: 22px;
-letter-spacing: 0.9px;
+font-size: 1.5rem;
+font-weight: normal;
+letter-spacing: 0.1rem;
 }
 
 #click {
-  color: white;
-  padding: -10px 10px 10px 10px;
-  font-size: 0.65rem;
+  color: #15599d;
+  margin-top: 10%;
+  font-size: 0.75rem;
   font-weight: bold;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 10px;
+}
+
+.button #click {
+  color: white;
+  margin-top: 10%;
+  font-size: 0.75rem;
+  font-weight: bold;
 }
 
 /* inputs card */
 
 #title-dismiss {
   width: 20px;
-  margin-left: 250px;
   margin-top: 10px;
-  margin-bottom: -20px
+  margin-bottom: 10px;
+  margin-left: 270px
 }
 
-#username {
+#input-container {
+  margin-top: 25px;
+  margin
+}
+
+#form-text {
+  margin-top: 50px;
   text-transform: uppercase;
-  font-size: 14px;
-  font-family: 'Rye', cursive;
+  font-size: 1rem;
   font-weight: bold;
+  font-family: 'Rye', cursive;
   letter-spacing: 1px;
   color: #15599d;
-  margin: 5px 5px 2px 5px;
+  margin: 0px;
 
 }
 
-#username-box {
-  margin: 5px 5px 2px 5px;
+#form-box {
+  margin: 10px 5px 2px 5px;
   padding: 5px;
 }
 
-#password {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-family: 'Rye', cursive;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #15599d;
-  margin: 2px 8px 5px 5px;
-
-}
-
-#password-box {
-  margin: 2px 1px 5px 5px;
-  padding: 5px;
-}
 
 /* -HOMEPAGE STYLING */
 
@@ -223,7 +219,5 @@ letter-spacing: 0.9px;
 }
 
 
-@media only screen and (max-width: 1080px) {
-
-
+@media only screen and (max-width: 500px) {
 }
