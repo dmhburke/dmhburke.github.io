@@ -1,3 +1,6 @@
+
+/* GLOBAL */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,25 +12,16 @@ body {
   font-size: 16px;
 }
 
-.main {
-display: grid;
-grid-template-columns: 1fr 325px 1fr;
-grid-template-rows: 1fr 325px 4fr;
-height: 1000px;
-width: 100%;
-justify-content: center;
-
-}
 
 .box {
 width: 100%;
-text-align: center;
 text-transform: uppercase;
 letter-spacing: 0.1px;
 -webkit-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
 -moz-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
 box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
 border-radius: 20px;
+
 }
 
 .box p {
@@ -37,9 +31,22 @@ border-radius: 20px;
   font-weight: bold;
 }
 
+/* LANDING PAGE */
+.landing-main {
+text-align: center;
+display: grid;
+grid-template-columns: 1fr 325px 1fr;
+grid-template-rows: 1fr 325px 4fr;
+height: 1000px;
+width: 100%;
+justify-content: center;
+
+}
+
 .button {
-background-color: #15599d;
+text-align: center;
 color: white;
+background-color: #15599d;
 grid-area: 2 / 2 / span 1 / span 1;
 z-index: 2;
 animation-name: none;
@@ -55,16 +62,6 @@ z-index: 1;
 animation-name: none;
 animation-duration: 1s;
 }
-
-.box p {
-  margin: auto;
-  margin-top: 10%;
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-
-/*Flip animation - START - keyframes*/
 
 @-webkit-keyframes flip-2-hor-top-bck {
   0% {
@@ -107,17 +104,9 @@ animation-duration: 1s;
   }
 }
 
-/*Flip animation - END - keyframes*/
-
-
-/* landing card */
-.title-logo {
-  margin: 15px auto;
-  display: block;
-}
-
+/* Landing page cards */
 #Banjo {
-  width: 20%;
+  width: 30%;
 }
 
 #Golf {
@@ -125,9 +114,22 @@ animation-duration: 1s;
   margin-top: 10%;
 }
 
-.inputs #Golf {
-  width: 10%;
-  margin-top: -5px;
+#click {
+  color: #15599d;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.button #click {
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+/* --landing card */
+.title-logo {
+  margin: 15px auto;
+  display: block;
 }
 
 #Bluegrass-font {
@@ -137,21 +139,12 @@ font-weight: normal;
 letter-spacing: 0.1rem;
 }
 
-#click {
-  color: #15599d;
-  margin-top: 10%;
-  font-size: 0.75rem;
-  font-weight: bold;
-}
+/* -- input card */
 
-.button #click {
-  color: white;
-  margin-top: 10%;
-  font-size: 0.75rem;
-  font-weight: bold;
+.inputs #Golf {
+  width: 10%;
+  margin-top: -5px;
 }
-
-/* inputs card */
 
 #title-dismiss {
   width: 20px;
@@ -185,6 +178,277 @@ letter-spacing: 0.1rem;
 
 /* -HOMEPAGE STYLING */
 
+.homepage-main {
+  display: grid;
+  grid-template-columns: 50px 325px 50px;
+  grid-template-rows: 1fr repeat(6,120px) 3fr;
+  height: 1000px;
+  width: 100%;
+  justify-content: center;
+}
+
+/* CARD SET UP */
+
+.homepage-nav {
+
+  color: white;
+  width: 300px;
+  height: 100px;
+  justify-self: center;
+  letter-spacing: 0.5px;
+  -webkit-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+  -moz-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+  box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 2%;
+  }
+
+/* Three content boxes */
+.tourTitle {
+  display: block;
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+  font-size: 1rem;
+}
+
+.greenJacketLogo {
+  height: 50px;
+  width: 175px;
+  font-size: 1rem;
+  display: inline-block;
+  padding-top: 0px;
+}
+
+.tour-winner {
+  height: 50px;
+  width: 125px;
+  text-align: left;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  display: inline-block;
+  padding-top: 15px;
+  position: absolute;
+}
+/* Three content boxes */
+
+/* Logos */
+  #GreenJacket {
+    width: 20px;
+    position: relative;
+    margin-top: 13px;
+    margin-left: 150px;
+  }
+
+  #Course-logo {
+    width: 25px;
+    margin-right: 85%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 1px;
+  }
+/* Logos */
+
+
+  /* INDIVIDUAL CARDS */
+
+  .Lexington {
+    grid-area: 2 / 2 / span 1 / span 1;
+    z-index: 3;
+    border: 3px solid white;
+
+    }
+
+  .filter-Lexington {
+    grid-area: 2 / 2 / span 1 / span 1;
+    background-color: #f5ed0e;
+    opacity: 0.1;
+    z-index: 2;
+
+    }
+
+  .image-Lexington {
+    grid-area: 2 / 2 / span 1 / span 1;
+    background-image: url("http://www.mygolfvacation.com/AdvHTML_Upload/griffin1_3.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 200px;
+    background-position: center;
+    z-index: 1;
+
+    }
+
+    .Savannah {
+      grid-area: 3 / 2 / span 1 / span 1;
+      z-index: 3;
+      border: 2px solid #F2F2F2;
+      box-shadow: none;
+
+          }
+
+    .filter-Savannah {
+      grid-area: 3 / 2 / span 1 / span 1;
+      background-color: #ff956f;
+      opacity: 0.5;
+      z-index: 2;
+      box-shadow: none;
+      }
+
+    .image-Savannah {
+      grid-area: 3 / 2 / span 1 / span 1;
+      background-image: url("http://www.teetimes.info/wp-content/uploads/2017/10/Chechessee-Creek-Club-South-Carolina1.jpg");
+      background-repeat: no-repeat;
+      background-size: auto 200px;
+      background-position: center;
+      z-index: 1;
+      filter: blur(1px);
+      -webkit-filter: blur(1px);
+      box-shadow: none;
+      }
+
+    .Pinehurst {
+      grid-area: 4 / 2 / span 1 / span 1;
+      z-index: 3;
+      border: 2px solid white;
+      box-shadow: none;
+    }
+
+    .filter-Pinehurst {
+      grid-area: 4 / 2 / span 1 / span 1;
+      background-color: #32b86a;
+      opacity: 0.4;
+      z-index: 2;
+      box-shadow: none;
+      }
+
+    .image-Pinehurst {
+      grid-area: 4 / 2 / span 1 / span 1;
+      background-image: url("https://thegolfnewsnet.com/wp-content/uploads/2016/12/TOBACCOROAD-14-BRIANOAR-990x556.jpg");
+      background-repeat: no-repeat;
+      background-size: auto 200px;
+      background-position: center;
+      z-index: 1;
+      filter: blur(2px);
+      -webkit-filter: blur(2px);
+      box-shadow: none;
+      }
+
+    .Nashville {
+      grid-area: 5 / 2 / span 1 / span 1;
+      z-index: 3;
+      border: 2px solid white;
+      box-shadow: none;
+    }
+
+    .filter-Nashville {
+      grid-area: 5 / 2 / span 1 / span 1;
+      background-color: #B47B34;
+      opacity: 0.4;
+      z-index: 2;
+      box-shadow: none;
+      }
+
+    .image-Nashville {
+      grid-area: 5 / 2 / span 1 / span 1;
+      background-image: url("https://golfadvisor.brightspotcdn.com/dims4/default/2cc70bd/2147483647/strip/true/crop/930x600+176+0/resize/930x600!/quality/90/?url=https%3A%2F%2Fgolfadvisor.brightspotcdn.com%2F8d%2F0f%2F1e3a2912c47d3040e03014f05702%2F93117.jpg");
+      background-repeat: no-repeat;
+      background-size: auto 200px;
+      background-position: center;
+      z-index: 1;
+      filter: blur(2px);
+      -webkit-filter: blur(2px);
+      box-shadow: none;
+      }
+
+    .Dallas {
+    grid-area: 6 / 2 / span 1 / span 1;
+    z-index: 3;
+    border: 2px solid white;
+    box-shadow: none;
+    }
+
+    .filter-Dallas {
+      grid-area: 6 / 2 / span 1 / span 1;
+      background-color: #001643;
+      opacity: 0.4;
+      z-index: 2;
+      box-shadow: none;
+      }
+
+    .image-Dallas {
+      grid-area: 6 / 2 / span 1 / span 1;
+      background-image: url("https://www.cowboysgolfclub.com/sites/www.cowboysgolfclub.com/files/Copy%20of%20course_star.JPG");
+      background-repeat: no-repeat;
+      background-size: auto 200px;
+      background-position: center;
+      z-index: 1;
+      filter: blur(2px);
+      -webkit-filter: blur(2px);
+      box-shadow: none;
+      }
+
+    .Tampa {
+    grid-area: 7 / 2 / span 1 / span 1;
+    z-index: 3;
+    border: 2px solid white;
+    box-shadow: none;
+    }
+
+    .filter-Tampa {
+      grid-area: 7 / 2 / span 1 / span 1;
+      background-color: #f5ed0e;
+      opacity: 0.2;
+      z-index: 2;
+      box-shadow: none;
+      }
+
+    .image-Tampa {
+      grid-area: 7 / 2 / span 1 / span 1;
+      background-image: url("https://golfadvisor.brightspotcdn.com/dims4/default/928717c/2147483647/strip/true/crop/1280x764+0+44/resize/1440x860!/format/jpg/quality/90/?url=https%3A%2F%2Fgolfadvisor.brightspotcdn.com%2F51%2F0a%2F83f3a3efcb28b6dd81854b7c5d8f%2Fp.php");
+      background-repeat: no-repeat;
+      background-size: auto 200px;
+      background-position: center;
+      z-index: 1;
+      filter: blur(2px);
+      -webkit-filter: blur(2px);
+      box-shadow: none;
+      }
+
+    .Charleston {
+      grid-area: 8 / 2 / span 1 / span 1;
+      z-index: 3;
+      border: 2px solid white;
+      box-shadow: none;
+    }
+
+    .filter-Charleston {
+      grid-area: 8 / 2 / span 1 / span 1;
+      background-color: #8a8785 ;
+      opacity: 0.4;
+      z-index: 2;
+      box-shadow: none;
+      }
+
+    .image-Charleston {
+      grid-area: 8 / 2 / span 1 / span 1;
+      background-image: url("TheOrigin.JPG");
+      background-repeat: no-repeat;
+      background-size: auto 400px;
+      background-position: center;
+      z-index: 1;
+      filter: blur(1px);
+      -webkit-filter: blur(1px);
+      box-shadow: none;
+      }
+
+  #return-home {
+    margin-top: 10px;
+    margin-left: 320px;
+    width: 30px;
+    display: block;
+  }
+
+/* Under Construction */
+
 .construction {
   color: #15599d;
   grid-area: 2 / 2 / span 1 / span 1;
@@ -210,13 +474,8 @@ letter-spacing: 0.1rem;
   display: block;
 }
 
-#return-home {
-  margin-top: 10px;
-  margin-left: 265px;
-  width: 20px;
-  display: block;
-}
 
 
-@media only screen and (max-width: 500px) {
+
+@media only screen and (min-width: 785px) {
 }
