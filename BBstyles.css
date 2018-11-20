@@ -107,16 +107,19 @@ animation-duration: 1s;
 /* Landing page cards */
 #Banjo {
   width: 30%;
+  margin-top: 10px;
 }
 
 #Golf {
   width: 10%;
   margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 #click {
   color: #15599d;
   font-size: 0.75rem;
+  margin-top: 10px;
   font-weight: bold;
 }
 
@@ -124,11 +127,12 @@ animation-duration: 1s;
   color: white;
   font-size: 0.75rem;
   font-weight: bold;
+  margin-top: 15px;
 }
 
 /* --landing card */
 .title-logo {
-  margin: 15px auto;
+  margin: 5px auto;
   display: block;
 }
 
@@ -143,7 +147,7 @@ letter-spacing: 0.1rem;
 
 .inputs #Golf {
   width: 10%;
-  margin-top: -5px;
+  margin-top: 5px;
 }
 
 #title-dismiss {
@@ -153,27 +157,82 @@ letter-spacing: 0.1rem;
   margin-left: 270px
 }
 
-#input-container {
-  margin-top: 25px;
-  margin
+.input-container {
+  height: 25%;
+  width: 90%;
+  display: block;
+  margin: 5px auto;
+  margin-bottom: 0px;
+  text-align: left;
+
 }
 
-#form-text {
-  margin-top: 50px;
-  text-transform: uppercase;
-  font-size: 1rem;
+.input-text {
+  height: 50px;
+  width: 140px;
+  border: 1px solid white;
+  display: inline-block;
+  margin: 2px 2px 0px 3px;
+  margin-top: 15px;
+  background-color: white;
+  padding-top: 18px;
+  text-align: center;
   font-weight: bold;
   font-family: 'Rye', cursive;
-  letter-spacing: 1px;
-  color: #15599d;
-  margin: 0px;
+  font-size: 0.75rem;
+}
+
+.dropdown {
+  height: 50px;
+  width: 140px;
+  border: 1px solid white;
+  display: inline-block;
+  font-size: 0.75rem;
+  position: absolute;
+  margin: 2px;
+  margin-top: 15px;
+  background-color: white;
+  padding-top: 18px;
+  padding-left: 6px;
+  color: white;
+  font-family: 'Rye', cursive;
+  font-weight: bold;
+  text-align: LEFT;
+  background-color: #15599d;
+}
+
+#dropdownIcon {
+  width: 25px;
+  display: inline;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: -5px;
+  border: 1px solid white;
+  border-radius: 5px
+}
+
+.dropdown-content {
+    display: none;
+    text-align: left;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 3px;
+    background-color: #f1f1f1;
+    min-width: 135px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.playerName {
+    font-weight: normal;
+    letter-spacing: 0em;
+    color: #15599d;
+    padding: 10px 0px 10px 3px;
+    text-decoration: none;
+    display: block;
 
 }
 
-#form-box {
-  margin: 10px 5px 2px 5px;
-  padding: 5px;
-}
 
 /* HOMEPAGE STYLING */
 
@@ -232,7 +291,7 @@ border: 1px solid white;
     height: 100%;
     width: 100%;
     background-color: #15599d;
-    opacity: 0.6;
+    opacity: 0.4;
     border-radius: 10px;
     position: absolute;
   }
