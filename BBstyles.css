@@ -17,9 +17,9 @@ body {
 width: 100%;
 text-transform: uppercase;
 letter-spacing: 0.1px;
--webkit-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
--moz-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+-webkit-box-shadow: 1px 3px 62px -6px rgba(219,216,219,0.73);
+-moz-box-shadow: 1px 3px 62px -6px rgba(219,216,219,0.73);
+box-shadow: 1px 3px 62px -6px rgba(219,216,219,0.73);
 border-radius: 20px;
 
 }
@@ -175,22 +175,137 @@ letter-spacing: 0.1rem;
   padding: 5px;
 }
 
+/* HOMEPAGE STYLING */
 
-/* -HOMEPAGE STYLING */
+.header {
+  height: 90px;
+  width: 100%;
+  background-color: #15599d;
+  z-index: 10;
+  text-align: center;
+  position: fixed;
+  top: 0px;
+}
+.IconBox {
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 50px;
+  height: 45px;
+  display: inline-block;
+  margin: 25px 10px;
+}
+
+.home-exit {
+border: 1px solid white;
+}
+
+#header-icons {
+  padding-top: 4px;
+  width: 35px;
+
+}
 
 .homepage-main {
   display: grid;
   grid-template-columns: 50px 325px 50px;
-  grid-template-rows: 1fr repeat(6,120px) 3fr;
+  grid-template-rows: 110px repeat(3,170px) 1fr;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.homepage {
+  width: 300px;
+  height: 150px;
+  justify-self: center;
+  letter-spacing: 0.5px;
+  -webkit-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+  -moz-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+  box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+  border-radius: 10px;
+  font-weight: bold;
+  }
+
+  .homepage-filter {
+    grid-area: 2 / 2 / span 1 / span 1;
+    z-index: 4;
+    height: 150px;
+    width: 300px;
+    background-color: #15599d;
+    opacity: 0.6;
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  .homepage-content {
+    z-index: 6;
+    height: 150px;
+    width: 300px;
+    opacity: 1;
+    color: white;
+    position: relative;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 10px;
+    font-size: 1.25rem;
+  }
+
+  .homepage-content img {
+    width: 60px;
+    display: block;
+    margin: 30px auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px white solid;
+    border-radius: 10px;
+  }
+
+  #leaderboard {
+    grid-area: 2 / 2 / span 1 / span 1;
+    z-index: 1;
+    background-image: URL("https://golftourney-arpjhjcmhvhe.netdna-ssl.com/wp-content/uploads/2015/01/leaderboard.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 160px;
+    background-position: center;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+
+  #scores {
+    grid-area: 3 / 2 / span 1 / span 1;
+    z-index: 1;
+    background-image: URL("http://www.sportsandoutdoorstips.com/wp-content/uploads/2017/03/How-to-Understand-a-Golf-Sc.gif");
+    background-repeat: no-repeat;
+    background-size: auto 250px;
+    background-position: center;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+
+  #tourDetails {
+    grid-area: 4 / 2 / span 1 / span 1;
+    z-index: 1;
+    background-image: URL("https://media.golfdigest.com/photos/55d4e2d44759c60c08238ae1/master/pass/courses-2009-04-coar01_19thhole.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 190px;
+    background-position: center;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+
+/* -TOUR HISTORY STYLING */
+
+.tourHistory-main {
+  display: grid;
+  grid-template-columns: 50px 325px 50px;
+  grid-template-rows: 1fr repeat(6,125px) 3fr;
   height: 1000px;
   width: 100%;
   justify-content: center;
 }
 
-/* CARD SET UP */
-
-.homepage-nav {
-
+.standard-nav {
   color: white;
   width: 300px;
   height: 100px;
@@ -281,7 +396,7 @@ letter-spacing: 0.1rem;
       grid-area: 3 / 2 / span 1 / span 1;
       z-index: 3;
       border: 2px solid #F2F2F2;
-      box-shadow: none;
+
 
           }
 
@@ -290,7 +405,7 @@ letter-spacing: 0.1rem;
       background-color: #ff956f;
       opacity: 0.5;
       z-index: 2;
-      box-shadow: none;
+
       }
 
     .image-Savannah {
@@ -302,14 +417,12 @@ letter-spacing: 0.1rem;
       z-index: 1;
       filter: blur(1px);
       -webkit-filter: blur(1px);
-      box-shadow: none;
       }
 
     .Pinehurst {
       grid-area: 4 / 2 / span 1 / span 1;
       z-index: 3;
       border: 2px solid white;
-      box-shadow: none;
     }
 
     .filter-Pinehurst {
@@ -317,7 +430,6 @@ letter-spacing: 0.1rem;
       background-color: #32b86a;
       opacity: 0.4;
       z-index: 2;
-      box-shadow: none;
       }
 
     .image-Pinehurst {
@@ -329,14 +441,12 @@ letter-spacing: 0.1rem;
       z-index: 1;
       filter: blur(2px);
       -webkit-filter: blur(2px);
-      box-shadow: none;
       }
 
     .Nashville {
       grid-area: 5 / 2 / span 1 / span 1;
       z-index: 3;
       border: 2px solid white;
-      box-shadow: none;
     }
 
     .filter-Nashville {
@@ -344,7 +454,7 @@ letter-spacing: 0.1rem;
       background-color: #B47B34;
       opacity: 0.4;
       z-index: 2;
-      box-shadow: none;
+
       }
 
     .image-Nashville {
@@ -356,14 +466,14 @@ letter-spacing: 0.1rem;
       z-index: 1;
       filter: blur(2px);
       -webkit-filter: blur(2px);
-      box-shadow: none;
+
       }
 
     .Dallas {
     grid-area: 6 / 2 / span 1 / span 1;
     z-index: 3;
     border: 2px solid white;
-    box-shadow: none;
+
     }
 
     .filter-Dallas {
@@ -371,7 +481,7 @@ letter-spacing: 0.1rem;
       background-color: #001643;
       opacity: 0.4;
       z-index: 2;
-      box-shadow: none;
+
       }
 
     .image-Dallas {
@@ -383,14 +493,14 @@ letter-spacing: 0.1rem;
       z-index: 1;
       filter: blur(2px);
       -webkit-filter: blur(2px);
-      box-shadow: none;
+
       }
 
     .Tampa {
     grid-area: 7 / 2 / span 1 / span 1;
     z-index: 3;
     border: 2px solid white;
-    box-shadow: none;
+
     }
 
     .filter-Tampa {
@@ -398,7 +508,7 @@ letter-spacing: 0.1rem;
       background-color: #f5ed0e;
       opacity: 0.2;
       z-index: 2;
-      box-shadow: none;
+
       }
 
     .image-Tampa {
@@ -410,14 +520,14 @@ letter-spacing: 0.1rem;
       z-index: 1;
       filter: blur(2px);
       -webkit-filter: blur(2px);
-      box-shadow: none;
+
       }
 
     .Charleston {
       grid-area: 8 / 2 / span 1 / span 1;
       z-index: 3;
       border: 2px solid white;
-      box-shadow: none;
+
     }
 
     .filter-Charleston {
@@ -425,7 +535,7 @@ letter-spacing: 0.1rem;
       background-color: #8a8785 ;
       opacity: 0.4;
       z-index: 2;
-      box-shadow: none;
+
       }
 
     .image-Charleston {
@@ -437,7 +547,7 @@ letter-spacing: 0.1rem;
       z-index: 1;
       filter: blur(1px);
       -webkit-filter: blur(1px);
-      box-shadow: none;
+
       }
 
   #return-home {
@@ -472,10 +582,4 @@ letter-spacing: 0.1rem;
   margin-bottom: 20px;
   width: 150px;
   display: block;
-}
-
-
-
-
-@media only screen and (min-width: 785px) {
 }
