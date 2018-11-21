@@ -275,7 +275,7 @@ border: 1px solid white;
 
 .homepage {
   width: 300px;
-  height: 135px;
+  height: 125px;
   justify-self: center;
   letter-spacing: 0.5px;
   -webkit-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
@@ -297,7 +297,8 @@ border: 1px solid white;
 
   #homepageText {
     color: white;
-    font-size: 1.85rem;
+    font-size: 1.75rem;
+
   }
 
 /*Styling for AGENDA CARDS*/
@@ -306,7 +307,7 @@ border: 1px solid white;
       grid-area: 2 / 2 / span 1 / span 1;
       z-index: 10;
       background: transparent;
-      height: 100%;
+      height: 95%;
       width: 100%;
       text-align: center;
       border: 2px solid white;
@@ -315,7 +316,7 @@ border: 1px solid white;
   .filter-leaderboard {
     grid-area: 2 / 2 / span 1 / span 1;
     z-index: 5;
-    height: 100%;
+    height: 95%;
     width: 100%;
     background-color: #15599d;
     opacity: 0.4;
@@ -325,7 +326,7 @@ border: 1px solid white;
   .image-leaderboard {
     grid-area: 2 / 2 / span 1 / span 1;
     z-index: 1;
-    height: 100%;
+    height: 95%;
     width: 100%;
     background-image: URL("https://golftourney-arpjhjcmhvhe.netdna-ssl.com/wp-content/uploads/2015/01/leaderboard.jpg");
     background-repeat: no-repeat;
@@ -335,6 +336,77 @@ border: 1px solid white;
     -webkit-filter: blur(0px);
     border-radius: 10px;
   }
+
+  .scores {
+      grid-area: 3 / 2 / span 1 / span 1;
+      z-index: 10;
+      background: transparent;
+      height: 95%;
+      width: 100%;
+      text-align: center;
+      border: 2px solid white;
+  }
+
+  .filter-scores {
+    grid-area: 3 / 2 / span 1 / span 1;
+    z-index: 5;
+    height: 95%;
+    width: 100%;
+    background-color: #15599d;
+    opacity: 0.4;
+    border-radius: 10px;
+  }
+
+  .image-scores {
+    grid-area: 3 / 2 / span 1 / span 1;
+    z-index: 1;
+    height: 95%;
+    width: 100%;
+    background-image: URL("http://www.sportsandoutdoorstips.com/wp-content/uploads/2017/03/How-to-Understand-a-Golf-Sc.gif");
+    background-repeat: no-repeat;
+    background-size: auto 200px;
+    background-position: top;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    border-radius: 10px;
+  }
+
+  .tourDetails {
+      grid-area: 4 / 2 / span 1 / span 1;
+      z-index: 10;
+      background: transparent;
+      height: 95%;
+      width: 100%;
+      text-align: center;
+      border: 2px solid white;
+  }
+
+  .filter-tourDetails {
+    grid-area: 4 / 2 / span 1 / span 1;
+    z-index: 5;
+    height: 95%;
+    width: 100%;
+    background-color: #15599d;
+    opacity: 0.4;
+    border-radius: 10px;
+  }
+
+  .image-tourDetails {
+    grid-area: 4 / 2 / span 1 / span 1;
+    z-index: 1;
+    height: 95%;
+    width: 100%;
+    background-image: URL("https://media.golfdigest.com/photos/55d4e2d44759c60c08238ae1/master/pass/courses-2009-04-coar01_19thhole.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 210px;
+    background-position: top;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    border-radius: 10px;
+  }
+
+
+
 
 /*
 
