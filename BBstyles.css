@@ -1,5 +1,5 @@
 
-/* GLOBAL */
+/**** GLOBAL ****/
 
 * {
   margin: 0;
@@ -12,7 +12,6 @@ body {
   font-size: 16px;
 }
 
-
 .box {
 width: 100%;
 text-transform: uppercase;
@@ -21,22 +20,21 @@ letter-spacing: 0.1px;
 -moz-box-shadow: 1px 3px 62px -6px rgba(219,216,219,0.73);
 box-shadow: 1px 3px 62px -6px rgba(219,216,219,0.73);
 border-radius: 20px;
-
 }
 
 .box p {
   margin: auto;
   margin-top: 10%;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
-/* LANDING PAGE */
+/**** LOGIN PAGE ****/
 .landing-main {
 text-align: center;
 display: grid;
-grid-template-columns: 1fr 325px 1fr;
-grid-template-rows: 1fr 325px 4fr;
+grid-template-columns: 1fr 275px 1fr;
+grid-template-rows: 1fr 275px 4fr;
 height: 1000px;
 width: 100%;
 justify-content: center;
@@ -55,7 +53,7 @@ animation-duration: 1s;
 
 .inputs {
 font-size: 2rem;
-background-color:#E7E7E7;
+background-color: #E7E7E7;
 color: #15599d;
 grid-area: 2 / 2 / span 1 / span 1;
 z-index: 1;
@@ -138,7 +136,7 @@ animation-duration: 1s;
 
 #Bluegrass-font {
 font-family: 'Rye', cursive;
-font-size: 1.5rem;
+font-size: 1.3rem;
 font-weight: normal;
 letter-spacing: 0.1rem;
 }
@@ -148,20 +146,26 @@ letter-spacing: 0.1rem;
 .inputs #Golf {
   width: 10%;
   margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.inputs #Banjo {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #title-dismiss {
   width: 20px;
   margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 270px
+  margin-bottom: 0px;
+  margin-left: 230px
 }
 
 .input-container {
   height: 25%;
   width: 90%;
   display: block;
-  margin: 5px auto;
+  margin-left: 6px;
   margin-bottom: 0px;
   text-align: left;
 
@@ -172,7 +176,7 @@ letter-spacing: 0.1rem;
   width: 140px;
   border: 1px solid white;
   display: inline-block;
-  margin: 2px 2px 0px 3px;
+  margin: 2px 0px 0px 3px;
   margin-top: 15px;
   background-color: white;
   padding-top: 18px;
@@ -182,22 +186,38 @@ letter-spacing: 0.1rem;
   font-size: 0.75rem;
 }
 
+.password {
+  height: 40px;
+  width: 230px;
+  margin: 0px 15px;
+  margin-top: 25px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: darkgrey;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5%;
+}
+
+/* DROPDOWN
+
 .dropdown {
   height: 50px;
-  width: 140px;
+  width: 230px;
   border: 1px solid white;
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: 1rem;
   position: absolute;
-  margin: 2px;
-  margin-top: 15px;
+  margin: 2px 10px;
+  margin-top: 5px;
   background-color: white;
-  padding-top: 18px;
-  padding-left: 6px;
+  padding-top: 15px;
+  padding-left: 30px;
+  text-align: left;
   color: white;
   font-family: 'Rye', cursive;
   font-weight: bold;
-  text-align: LEFT;
   background-color: #15599d;
 }
 
@@ -205,8 +225,8 @@ letter-spacing: 0.1rem;
   width: 25px;
   display: inline;
   position: absolute;
-  margin-left: 20px;
-  margin-top: -5px;
+  margin-left: 25px;
+  margin-top: -2px;
   border: 1px solid white;
   border-radius: 5px
 }
@@ -230,20 +250,21 @@ letter-spacing: 0.1rem;
     padding: 10px 0px 10px 3px;
     text-decoration: none;
     display: block;
-
 }
+DROPDOWN */
 
 
-/* HOMEPAGE STYLING */
+/**** HOMEPAGE ****/
 
 .header {
   height: 90px;
   width: 100%;
   background-color: #15599d;
-  z-index: 10;
+  z-index: 50;
   text-align: center;
   position: fixed;
   top: 0px;
+  left: 0px;
 }
 .IconBox {
   border: 1px solid white;
@@ -289,7 +310,7 @@ border: 1px solid white;
     width: 60px;
     display: block;
     margin: 30px auto;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     padding: 5px;
     border: 1px white solid;
     border-radius: 10px;
@@ -297,17 +318,18 @@ border: 1px solid white;
 
   #homepageText {
     color: white;
-    font-size: 1.75rem;
+    font-size: 1.35rem;
+    padding-bottom: 5px;
 
   }
 
-/*Styling for AGENDA CARDS*/
+/*Styling for homepage cards*/
 
   .leaderboard {
       grid-area: 2 / 2 / span 1 / span 1;
       z-index: 10;
       background: transparent;
-      height: 95%;
+      height: 90%;
       width: 100%;
       text-align: center;
       border: 2px solid white;
@@ -316,7 +338,7 @@ border: 1px solid white;
   .filter-leaderboard {
     grid-area: 2 / 2 / span 1 / span 1;
     z-index: 5;
-    height: 95%;
+    height: 90%;
     width: 100%;
     background-color: #15599d;
     opacity: 0.4;
@@ -326,7 +348,7 @@ border: 1px solid white;
   .image-leaderboard {
     grid-area: 2 / 2 / span 1 / span 1;
     z-index: 1;
-    height: 95%;
+    height: 90%;
     width: 100%;
     background-image: URL("https://golftourney-arpjhjcmhvhe.netdna-ssl.com/wp-content/uploads/2015/01/leaderboard.jpg");
     background-repeat: no-repeat;
@@ -341,7 +363,7 @@ border: 1px solid white;
       grid-area: 3 / 2 / span 1 / span 1;
       z-index: 10;
       background: transparent;
-      height: 95%;
+      height: 90%;
       width: 100%;
       text-align: center;
       border: 2px solid white;
@@ -350,7 +372,7 @@ border: 1px solid white;
   .filter-scores {
     grid-area: 3 / 2 / span 1 / span 1;
     z-index: 5;
-    height: 95%;
+    height: 90%;
     width: 100%;
     background-color: #15599d;
     opacity: 0.4;
@@ -360,7 +382,7 @@ border: 1px solid white;
   .image-scores {
     grid-area: 3 / 2 / span 1 / span 1;
     z-index: 1;
-    height: 95%;
+    height: 90%;
     width: 100%;
     background-image: URL("http://www.sportsandoutdoorstips.com/wp-content/uploads/2017/03/How-to-Understand-a-Golf-Sc.gif");
     background-repeat: no-repeat;
@@ -375,7 +397,7 @@ border: 1px solid white;
       grid-area: 4 / 2 / span 1 / span 1;
       z-index: 10;
       background: transparent;
-      height: 95%;
+      height: 90%;
       width: 100%;
       text-align: center;
       border: 2px solid white;
@@ -384,7 +406,7 @@ border: 1px solid white;
   .filter-tourDetails {
     grid-area: 4 / 2 / span 1 / span 1;
     z-index: 5;
-    height: 95%;
+    height: 90%;
     width: 100%;
     background-color: #15599d;
     opacity: 0.4;
@@ -394,7 +416,7 @@ border: 1px solid white;
   .image-tourDetails {
     grid-area: 4 / 2 / span 1 / span 1;
     z-index: 1;
-    height: 95%;
+    height: 90%;
     width: 100%;
     background-image: URL("https://media.golfdigest.com/photos/55d4e2d44759c60c08238ae1/master/pass/courses-2009-04-coar01_19thhole.jpg");
     background-repeat: no-repeat;
@@ -405,36 +427,461 @@ border: 1px solid white;
     border-radius: 10px;
   }
 
+/**** LEADERBOARD PAGE ****/
+
+.Leaderboard-main {
+  display: grid;
+  grid-template-columns: 1fr repeat(1,300px) 1fr;
+  grid-template-rows: 135px repeat(1,400px) 75px;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+  .leaderboard-background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: URL("https://d2fcpwiwvrn6fk.cloudfront.net/wordpress-production/2017/11/Tiger-Woods-equipment-scotty-2.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 500px;
+    background-position: left;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+  }
+
+  .leaderboard-filter {
+    grid-area: 2 / 2 / span 1 / span 1;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    justify-self: center;
+    -webkit-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+    -moz-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+    box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+    border-radius: 10px;
+    opacity: 0.4;
+    background-color: black;
+  }
+
+  .leaderboard-content {
+    grid-area: 2 / 2 / span 1 / span 1;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border: 2px solid white; /*#15599d*/
+    justify-self: center;
+    letter-spacing: 0.5px;
+    -webkit-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+    -moz-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+    box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+    border-radius: 10px;
+
+  }
+
+  .leader-table {
+    table-layout: fixed;
+    width: 100%;
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-top: 10px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+  }
+
+  .LeaderName {
+    width: 50%;
+    }
+
+  .GrandTotal {
+    width: 25%;
+    }
+
+  .DayTotal {
+    width: 25%;
+    }
 
 
+/**** ENTER SCORES PAGE ****/
 
-/*
+.enterScore-main {
+  display: grid;
+  grid-template-columns: 50px repeat(2,155px) 50px;
+  grid-template-rows: 105px repeat(3,150px) 1fr;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
 
-  #scores {
-    grid-area: 3 / 2 / span 1 / span 1;
+.enterScore {
+  width: 300px;
+  height: 125px;
+  letter-spacing: 0.5px;
+  -webkit-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+  -moz-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+  box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
+  border-radius: 10px;
+  font-weight: bold;
+  }
+
+  #enterScoreLogo {
+    width: 40px;
+    display: block;
+    margin: 35px auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px white solid;
+    border-radius: 10px;
+  }
+
+  #enterScoreText {
+    color: white;
+    font-size: 1.15rem;
+    padding-bottom: 5px;
+
+  }
+
+/*Styling for score entry cards */
+
+  .Round1 {
+      grid-area: 2 / 2 / span 1 / span 1;
+      z-index: 10;
+      background: transparent;
+      height: 90%;
+      width: 95%;
+      text-align: center;
+      border: 2px solid white;
+      justify-self: center;
+  }
+
+  .filter-Round1 {
+    grid-area: 2 / 2 / span 1 / span 1;
+    z-index: 5;
+    height: 90%;
+    width: 95%;
+    background-color: #15599d;
+    opacity: 0.4;
+    border-radius: 10px;
+    justify-self: center;
+  }
+
+  .image-Round1 {
+    grid-area: 2 / 2 / span 1 / span 1;
     z-index: 1;
+    height: 90%;
+    width: 95%;
     background-image: URL("http://www.sportsandoutdoorstips.com/wp-content/uploads/2017/03/How-to-Understand-a-Golf-Sc.gif");
     background-repeat: no-repeat;
-    background-size: auto 250px;
-    background-position: center;
+    background-size: auto 200px;
+    background-position: top;
     filter: blur(0px);
     -webkit-filter: blur(0px);
+    border-radius: 10px;
+    justify-self: center;
   }
 
-  #tourDetails {
-    grid-area: 4 / 2 / span 1 / span 1;
+  .Round2 {
+      grid-area: 2 / 3 / span 1 / span 1;
+      z-index: 10;
+      background: transparent;
+      height: 90%;
+      width: 95%;
+      text-align: center;
+      border: 2px solid white;
+      justify-self: center;
+  }
+
+  .filter-Round2 {
+    grid-area: 2 / 3 / span 1 / span 1;
+    z-index: 5;
+    height: 90%;
+    width: 95%;
+    background-color: #15599d;
+    opacity: 0.4;
+    border-radius: 10px;
+    justify-self: center;
+  }
+
+  .image-Round2 {
+    grid-area: 2 / 3 / span 1 / span 1;
     z-index: 1;
+    height: 90%;
+    width: 95%;
+    background-image: URL("http://www.sportsandoutdoorstips.com/wp-content/uploads/2017/03/How-to-Understand-a-Golf-Sc.gif");
+    background-repeat: no-repeat;
+    background-size: auto 200px;
+    background-position: top;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    border-radius: 10px;
+    justify-self: center;
+  }
+
+  .Round3 {
+      grid-area: 3 / 2 / span 1 / span 1;
+      z-index: 10;
+      background: transparent;
+      height: 95%;
+      width: 95%;
+      text-align: center;
+      border: 2px solid white;
+      justify-self: center;
+  }
+
+  .filter-Round3 {
+    grid-area: 3 / 2 / span 1 / span 1;
+    z-index: 5;
+    height: 95%;
+    width: 95%;
+    background-color: #15599d;
+    opacity: 0.4;
+    border-radius: 10px;
+    justify-self: center;
+  }
+
+  .image-Round3 {
+    grid-area: 3 / 2 / span 1 / span 1;
+    z-index: 1;
+    height: 95%;
+    width: 95%;
     background-image: URL("https://media.golfdigest.com/photos/55d4e2d44759c60c08238ae1/master/pass/courses-2009-04-coar01_19thhole.jpg");
     background-repeat: no-repeat;
-    background-size: auto 190px;
-    background-position: center;
+    background-size: auto 210px;
+    background-position: top;
     filter: blur(0px);
     -webkit-filter: blur(0px);
+    border-radius: 10px;
+    justify-self: center;
   }
 
-  */
+  .OtherGolf {
+      grid-area: 3 / 3 / span 1 / span 1;
+      z-index: 10;
+      background: transparent;
+      height: 95%;
+      width: 95%;
+      text-align: center;
+      border: 2px solid white;
+      justify-self: center;
+  }
 
-/* -TOUR HISTORY STYLING */
+  .filter-OtherGolf {
+    grid-area: 3 / 3 / span 1 / span 1;
+    z-index: 5;
+    height: 95%;
+    width: 95%;
+    background-color: #15599d;
+    opacity: 0.4;
+    border-radius: 10px;
+    justify-self: center;
+  }
+
+  .image-OtherGolf {
+    grid-area: 3 / 3 / span 1 / span 1;
+    z-index: 1;
+    height: 95%;
+    width: 95%;
+    background-image: URL("https://media.golfdigest.com/photos/55d4e2d44759c60c08238ae1/master/pass/courses-2009-04-coar01_19thhole.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 210px;
+    background-position: top;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    border-radius: 10px;
+    justify-self: center;
+  }
+
+  .Social {
+      grid-area: 4 / 2 / span 1 / span 1;
+      z-index: 10;
+      background: transparent;
+      height: 95%;
+      width: 95%;
+      text-align: center;
+      border: 2px solid white;
+      justify-self: center;
+  }
+
+  .filter-Social {
+    grid-area: 4 / 2 / span 1 / span 1;
+    z-index: 5;
+    height: 95%;
+    width: 95%;
+    background-color: #15599d;
+    opacity: 0.4;
+    border-radius: 10px;
+    justify-self: center;
+  }
+
+  .image-Social {
+    grid-area: 4 / 2 / span 1 / span 1;
+    z-index: 1;
+    height: 95%;
+    width: 95%;
+    background-image: URL("https://media.golfdigest.com/photos/55d4e2d44759c60c08238ae1/master/pass/courses-2009-04-coar01_19thhole.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 210px;
+    background-position: top;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    border-radius: 10px;
+    justify-self: center;
+  }
+
+  .Sports {
+      grid-area: 4 / 3 / span 1 / span 1;
+      z-index: 10;
+      background: transparent;
+      height: 95%;
+      width: 95%;
+      text-align: center;
+      border: 2px solid white;
+      justify-self: center;
+  }
+
+  .filter-Sports {
+    grid-area: 4 / 3 / span 1 / span 1;
+    z-index: 5;
+    height: 95%;
+    width: 95%;
+    background-color: #15599d;
+    opacity: 0.4;
+    border-radius: 10px;
+    justify-self: center;
+  }
+
+  .image-Sports {
+    grid-area: 4 / 3 / span 1 / span 1;
+    z-index: 1;
+    height: 95%;
+    width: 95%;
+    background-image: URL("https://media.golfdigest.com/photos/55d4e2d44759c60c08238ae1/master/pass/courses-2009-04-coar01_19thhole.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 210px;
+    background-position: top;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    border-radius: 10px;
+    justify-self: center;
+  }
+
+  /**** TOUR DETAILS PAGE ****/
+
+  .TourDetails-main {
+    display: grid;
+    grid-template-columns: 50px 325px 50px;
+    grid-template-rows: 110px repeat(3,150px) 1fr;
+    height: 1000px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .TourSchedule {
+      grid-area: 2 / 2 / span 1 / span 1;
+      z-index: 10;
+      background: transparent;
+      height: 90%;
+      width: 100%;
+      text-align: center;
+      border: 2px solid white;
+  }
+
+  .filter-TourSchedule {
+    grid-area: 2 / 2 / span 1 / span 1;
+    z-index: 5;
+    height: 90%;
+    width: 100%;
+    background-color: #15599d;
+    opacity: 0.4;
+    border-radius: 10px;
+  }
+
+  .image-TourSchedule {
+    grid-area: 2 / 2 / span 1 / span 1;
+    z-index: 1;
+    height: 90%;
+    width: 100%;
+    background-image: URL("https://golftourney-arpjhjcmhvhe.netdna-ssl.com/wp-content/uploads/2015/01/leaderboard.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 200px;
+    background-position: top;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    border-radius: 10px;
+  }
+
+  .PlayerDetails {
+      grid-area: 3 / 2 / span 1 / span 1;
+      z-index: 10;
+      background: transparent;
+      height: 90%;
+      width: 100%;
+      text-align: center;
+      border: 2px solid white;
+  }
+
+  .filter-PlayerDetails {
+    grid-area: 3 / 2 / span 1 / span 1;
+    z-index: 5;
+    height: 90%;
+    width: 100%;
+    background-color: #15599d;
+    opacity: 0.4;
+    border-radius: 10px;
+  }
+
+  .image-PlayerDetails {
+    grid-area: 3 / 2 / span 1 / span 1;
+    z-index: 1;
+    height: 90%;
+    width: 100%;
+    background-image: URL("https://golftourney-arpjhjcmhvhe.netdna-ssl.com/wp-content/uploads/2015/01/leaderboard.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 200px;
+    background-position: top;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    border-radius: 10px;
+  }
+
+  .TourHistory {
+      grid-area: 4 / 2 / span 1 / span 1;
+      z-index: 10;
+      background: transparent;
+      height: 90%;
+      width: 100%;
+      text-align: center;
+      border: 2px solid white;
+  }
+
+  .filter-TourHistory {
+    grid-area: 4 / 2 / span 1 / span 1;
+    z-index: 5;
+    height: 90%;
+    width: 100%;
+    background-color: #15599d;
+    opacity: 0.4;
+    border-radius: 10px;
+  }
+
+  .image-TourHistory {
+    grid-area: 4 / 2 / span 1 / span 1;
+    z-index: 1;
+    height: 90%;
+    width: 100%;
+    background-image: URL("https://golftourney-arpjhjcmhvhe.netdna-ssl.com/wp-content/uploads/2015/01/leaderboard.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 200px;
+    background-position: top;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    border-radius: 10px;
+  }
+
+/**** TOUR HISTORY PAGE ****/
 
 .tourHistory-main {
   display: grid;
