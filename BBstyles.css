@@ -12,6 +12,18 @@ body {
   font-size: 16px;
 }
 
+/**** LANDING PAGE ****/
+
+.landing-main {
+text-align: center;
+display: grid;
+grid-template-columns: 1fr 275px 1fr;
+grid-template-rows: 1fr 275px 4fr;
+height: 1000px;
+width: 100%;
+justify-content: center;
+}
+
 .box {
 width: 100%;
 text-transform: uppercase;
@@ -22,44 +34,120 @@ box-shadow: 1px 3px 62px -6px rgba(219,216,219,0.73);
 border-radius: 20px;
 }
 
-.box p {
-  margin: auto;
-  margin-top: 10%;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-/**** LOGIN PAGE ****/
-.landing-main {
-text-align: center;
-display: grid;
-grid-template-columns: 1fr 275px 1fr;
-grid-template-rows: 1fr 275px 4fr;
-height: 1000px;
-width: 100%;
-justify-content: center;
-
-}
-
 .button {
-text-align: center;
 color: white;
 background-color: #15599d;
 grid-area: 2 / 2 / span 1 / span 1;
 z-index: 2;
 animation-name: none;
 animation-duration: 1s;
+text-align: center;
 }
 
 .inputs {
-font-size: 2rem;
-background-color: #E7E7E7;
 color: #15599d;
+background-color: #E7E7E7; /**/
 grid-area: 2 / 2 / span 1 / span 1;
 z-index: 1;
 animation-name: none;
 animation-duration: 1s;
+text-align: center;
 }
+
+/* Login card containers & information */
+
+.golfContainer {
+  margin: 25px 0px;
+  display: block;
+}
+
+#Golf {
+  width: 10%;
+}
+
+.infoContainer {
+  display: block;
+  height: 60px;
+}
+
+.formContainer {
+  height: 90%;
+  width: 80%;
+  background-color: white;
+  margin-left: 25px;
+  border-radius: 10px;
+  border: 1px solid #15599d;
+}
+
+.enterPassword {
+  padding: 0 auto;
+  padding-top: 13px;
+  color: lightgrey;
+  font-size: 1.25rem;
+  text-align: center;
+  outline: none;
+  display: block;
+  text-transform: capitalize;
+  border-radius: 10px;
+  border: none;
+}
+
+.passwordEnter {
+  padding: 0 auto;
+  padding-top: 13px;
+  padding-left: 13px;
+  color: lightgrey;
+  font-size: 1.25rem;
+  text-align: center;
+  outline: none;
+  display: none;
+  border-radius: 10px;
+  border: none;
+}
+
+#Bluegrass-font {
+font-family: 'Rye', cursive;
+font-size: 1.1rem;
+font-weight: bold;
+letter-spacing: 0.1rem;
+}
+
+.banjoContainer {
+  margin: 10px 0 5px 0;
+  display: block;
+}
+
+#Banjo {
+  width: 30%;
+}
+
+.submitContainer {
+  display: block;
+}
+
+#click {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.button #click {
+  color: white;
+}
+
+.inputs #click {
+  color: #15599d;
+}
+
+.dismiss {
+  width: 5%;
+  display: block;
+  position: absolute;
+  left: 290px;
+  top: 150px;
+}
+
+
+/* Animation */
 
 @-webkit-keyframes flip-2-hor-top-bck {
   0% {
@@ -100,104 +188,6 @@ animation-duration: 1s;
             transform: rotateY(0);
     opacity: 1;
   }
-}
-
-/* Landing page cards */
-#Banjo {
-  width: 30%;
-  margin-top: 10px;
-}
-
-#Golf {
-  width: 10%;
-  margin-top: 10%;
-  margin-bottom: 5%;
-}
-
-#click {
-  color: #15599d;
-  font-size: 0.75rem;
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-.button #click {
-  color: white;
-  font-size: 0.75rem;
-  font-weight: bold;
-  margin-top: 15px;
-}
-
-/* --landing card */
-.title-logo {
-  margin: 5px auto;
-  display: block;
-}
-
-#Bluegrass-font {
-font-family: 'Rye', cursive;
-font-size: 1.3rem;
-font-weight: normal;
-letter-spacing: 0.1rem;
-}
-
-/* -- input card */
-
-.inputs #Golf {
-  width: 10%;
-  margin-top: 5px;
-  margin-bottom: 20px;
-}
-
-.inputs #Banjo {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-#title-dismiss {
-  width: 20px;
-  margin-top: 10px;
-  margin-bottom: 0px;
-  margin-left: 230px
-}
-
-.input-container {
-  height: 25%;
-  width: 90%;
-  display: block;
-  margin-left: 6px;
-  margin-bottom: 0px;
-  text-align: left;
-
-}
-
-.input-text {
-  height: 50px;
-  width: 140px;
-  border: 1px solid white;
-  display: inline-block;
-  margin: 2px 0px 0px 3px;
-  margin-top: 15px;
-  background-color: white;
-  padding-top: 18px;
-  text-align: center;
-  font-weight: bold;
-  font-family: 'Rye', cursive;
-  font-size: 0.75rem;
-}
-
-.password {
-  height: 40px;
-  width: 230px;
-  margin: 0px 15px;
-  margin-top: 25px;
-  font-size: 0.75rem;
-  font-weight: bold;
-  color: darkgrey;
-  background-color: white;
-  border-radius: 10px;
-  text-align: center;
-  padding: 5%;
 }
 
 /* DROPDOWN
@@ -528,9 +518,9 @@ border: 1px solid white;
   }
 
   #enterScoreLogo {
-    width: 40px;
+    width: 45px;
     display: block;
-    margin: 35px auto;
+    margin: 25px auto;
     margin-bottom: 10px;
     padding: 5px;
     border: 1px white solid;
@@ -573,10 +563,10 @@ border: 1px solid white;
     z-index: 1;
     height: 90%;
     width: 95%;
-    background-image: URL("http://www.sportsandoutdoorstips.com/wp-content/uploads/2017/03/How-to-Understand-a-Golf-Sc.gif");
+    background-image: URL("https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fprogolfnow.com%2Ffiles%2F2013%2F04%2F7119450.jpg&c=sc&w=850&h=560");
     background-repeat: no-repeat;
     background-size: auto 200px;
-    background-position: top;
+    background-position: center;
     filter: blur(0px);
     -webkit-filter: blur(0px);
     border-radius: 10px;
@@ -610,10 +600,10 @@ border: 1px solid white;
     z-index: 1;
     height: 90%;
     width: 95%;
-    background-image: URL("http://www.sportsandoutdoorstips.com/wp-content/uploads/2017/03/How-to-Understand-a-Golf-Sc.gif");
+    background-image: URL("https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/08/09/23/Tiger-Woods.jpg?w968h681");
     background-repeat: no-repeat;
-    background-size: auto 200px;
-    background-position: top;
+    background-size: auto 140px;
+    background-position: left;
     filter: blur(0px);
     -webkit-filter: blur(0px);
     border-radius: 10px;
@@ -647,10 +637,10 @@ border: 1px solid white;
     z-index: 1;
     height: 95%;
     width: 95%;
-    background-image: URL("https://media.golfdigest.com/photos/55d4e2d44759c60c08238ae1/master/pass/courses-2009-04-coar01_19thhole.jpg");
+    background-image: URL("https://cdn.cnn.com/cnnnext/dam/assets/180402205224-tiger-woods-masters-augusta-first-tee-2018-super-169.jpg");
     background-repeat: no-repeat;
-    background-size: auto 210px;
-    background-position: top;
+    background-size: auto 180px;
+    background-position: center;
     filter: blur(0px);
     -webkit-filter: blur(0px);
     border-radius: 10px;
@@ -684,10 +674,10 @@ border: 1px solid white;
     z-index: 1;
     height: 95%;
     width: 95%;
-    background-image: URL("https://media.golfdigest.com/photos/55d4e2d44759c60c08238ae1/master/pass/courses-2009-04-coar01_19thhole.jpg");
+    background-image: URL("https://secure.i.telegraph.co.uk/multimedia/archive/02283/woods_2283427b.jpg");
     background-repeat: no-repeat;
     background-size: auto 210px;
-    background-position: top;
+    background-position: center;
     filter: blur(0px);
     -webkit-filter: blur(0px);
     border-radius: 10px;

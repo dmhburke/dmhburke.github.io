@@ -3,7 +3,7 @@
 
 let cardOne = document.querySelector(".button");
 let cardTwo = document.querySelector(".inputs");
-let flipButton = document.querySelector("#title-dismiss");
+let flipButton = document.querySelector(".dismiss");
 
 function flipToInput() {
   cardOne.style.animationName = 'flip-2-hor-top-bck';
@@ -24,6 +24,18 @@ function flipBack() {
 
 flipButton.onclick = flipBack;
 
+//*** PASSWORD ENTRY ***//
+
+let enterPassword = document.querySelector(".enterPassword");
+let passwordEnter = document.querySelector(".passwordEnter");
+
+function showInput() {
+  enterPassword.style.display = 'none';
+  passwordEnter.style.display = 'block';
+}
+
+enterPassword.onclick = showInput;
+
 //***Show dropdown//
 
 let dropdown = document.querySelector(".dropdown");
@@ -38,5 +50,3 @@ function showDropdown() {
       }
   }
 dropdown.onclick = showDropdown;
-
-//Login card flips back//
