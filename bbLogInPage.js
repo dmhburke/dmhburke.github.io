@@ -10,6 +10,7 @@ function flipToInput() {
   cardOne.style.zIndex = '1';
   cardTwo.style.animationName = 'scale-in-center';
   cardTwo.style.zIndex = '2';
+  flipButton.style.display = 'inline';
 }
 
 cardOne.onclick = flipToInput;
@@ -19,22 +20,14 @@ function flipBack() {
   cardTwo.style.zIndex = '1';
   cardOne.style.animationName = 'scale-in-center';
   cardOne.style.zIndex = '2';
-  dropdownContent.style.display = 'none';
+  flipButton.style.display = 'none';
 }
 
 flipButton.onclick = flipBack;
 
-//*** PASSWORD ENTRY ***//
+//*** PASSWORD CHECK ***//
 
-let enterPassword = document.querySelector(".enterPassword");
 let passwordEnter = document.querySelector(".passwordEnter");
-
-function showInput() {
-  enterPassword.style.display = 'none';
-  passwordEnter.style.display = 'block';
-}
-
-enterPassword.onclick = showInput;
 
 //***Show dropdown//
 

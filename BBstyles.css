@@ -80,30 +80,26 @@ text-align: center;
 }
 
 .enterPassword {
-  width:80%;
+  width: 80%;
   margin: 0 auto;
   padding: 0 auto;
-  padding-top: 16px;
+  padding-top: 2px;
   color: lightgrey;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-align: center;
   outline: none;
   display: block;
-  text-transform: capitalize;
   border-radius: 10px;
   border: none;
 }
 
 .passwordEnter {
   width:80%;
-  margin: 0 auto;
-  padding: 0 auto;
-  padding-top: 17px;
+  margin: 10px auto;
   color: #15599d;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
   outline: none;
-  display: none;
   border-radius: 10px;
   border: none;
 }
@@ -145,7 +141,7 @@ letter-spacing: 0.1rem;
   width: 5%;
   display: block;
   position: absolute;
-  left: 290px;
+  left: 295px;
   top: 150px;
 }
 
@@ -424,8 +420,8 @@ border: 1px solid white;
 
 .Leaderboard-main {
   display: grid;
-  grid-template-columns: 1fr repeat(1,300px) 1fr;
-  grid-template-rows: 135px repeat(1,400px) 75px;
+  grid-template-columns: 1fr repeat(1,350px) 1fr;
+  grid-template-rows: 115px repeat(1,400px) 75px;
   height: 100%;
   width: 100%;
   justify-content: center;
@@ -435,12 +431,12 @@ border: 1px solid white;
     height: 100%;
     width: 100%;
     position: absolute;
-    background-image: URL("https://d2fcpwiwvrn6fk.cloudfront.net/wordpress-production/2017/11/Tiger-Woods-equipment-scotty-2.jpg");
+    background-image: URL("http://www.celebritysports.co.uk/images/sized/images/articles/WoodsMickelson-600x798.jpg");
     background-repeat: no-repeat;
     background-size: auto 500px;
-    background-position: left;
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
+    background-position: center;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
   }
 
   .leaderboard-filter {
@@ -453,7 +449,7 @@ border: 1px solid white;
     -moz-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
     box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
     border-radius: 10px;
-    opacity: 0.4;
+    opacity: 0.6;
     background-color: black;
   }
 
@@ -476,17 +472,19 @@ border: 1px solid white;
   .leader-table {
     table-layout: fixed;
     width: 100%;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 400;
-    margin-top: 10px;
+    padding: 10px 0px 10px 0px;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
-
   }
 
   .LeaderName {
-    width: 50%;
+    width: 60%;
+    height: 40px;
+    padding-left: 5px;
+    text-align: left;
     }
 
   .GrandTotal {
@@ -496,6 +494,17 @@ border: 1px solid white;
   .DayTotal {
     width: 25%;
     }
+
+  .LBPlayerImg {
+    width: 25px;
+    display: inline-block;
+    border-radius: 20px;
+  }
+
+  .LBPlayerText{
+    display: inline-block;
+    vertical-align: 50%;
+  }
 
 
 /**** ENTER SCORES PAGE ****/
