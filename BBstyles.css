@@ -788,7 +788,7 @@ border: 1px solid white;
     height: 90%;
     width: 100%;
     background-color: #15599d;
-    opacity: 0.4;
+    opacity: 0.5;
     border-radius: 10px;
   }
 
@@ -801,8 +801,8 @@ border: 1px solid white;
     background-repeat: no-repeat;
     background-size: auto 320px;
     background-position: center;
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
     border-radius: 10px;
   }
 
