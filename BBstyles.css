@@ -635,7 +635,7 @@ border: 1px solid white;
     width: 95%;
     background-image: URL("Round1Image.jpg");
     background-repeat: no-repeat;
-    background-size: auto 200px;
+    background-size: auto 150px;
     background-position: center;
     filter: blur(0px);
     -webkit-filter: blur(0px);
