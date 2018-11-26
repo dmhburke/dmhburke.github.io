@@ -10,20 +10,36 @@ function flipToInput() {
   cardOne.style.zIndex = '1';
   cardTwo.style.animationName = 'scale-in-center';
   cardTwo.style.zIndex = '2';
+}
+
+function dismissAppear() {
   flipButton.style.display = 'inline';
 }
 
-cardOne.onclick = flipToInput;
+function flipCard() {
+  flipToInput();
+  setTimeout(dismissAppear(),5000);
+}
+
+cardOne.onclick = flipCard;
 
 function flipBack() {
   cardTwo.style.animationName = 'flip-2-hor-top-bck';
   cardTwo.style.zIndex = '1';
   cardOne.style.animationName = 'scale-in-center';
   cardOne.style.zIndex = '2';
+}
+
+function dismissDisappear(){
   flipButton.style.display = 'none';
 }
 
-flipButton.onclick = flipBack;
+function flipCardBack() {
+  flipBack();
+  setTimeout(dismissDisappear(),5000);
+}
+
+flipButton.onclick = flipCardBack;
 
 //*** PASSWORD CHECK ***//
 
