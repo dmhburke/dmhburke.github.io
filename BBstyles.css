@@ -428,7 +428,7 @@ border: 1px solid white;
 .Leaderboard-main {
   display: grid;
   grid-template-columns: 1fr repeat(1,325px) 1fr;
-  grid-template-rows: 113px repeat(1,420px) 75px;
+  grid-template-rows: 113px repeat(1,450px) 75px;
   height: 100%;
   width: 100%;
   justify-content: center;
@@ -515,7 +515,7 @@ border: 1px solid white;
 
   td {
     border-bottom: 1px dotted grey;
-    height: 30px;
+    height: 40px;
   }
 
   .LeaderName {
@@ -550,7 +550,7 @@ border: 1px solid white;
   .LBPlayerImg {
     width: 25px;
     display: inline-block;
-    border-radius: 20px;
+    border-radius: 25px;
   }
 
   .LBPlayerText{
