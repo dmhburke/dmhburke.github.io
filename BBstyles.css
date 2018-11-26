@@ -99,7 +99,7 @@ text-align: center;
   width:80%;
   margin: 10px auto;
   color: #15599d;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: center;
   outline: none;
   border-radius: 10px;
@@ -273,6 +273,10 @@ DROPDOWN */
 
 .home-exit {
 border: 1px solid white;
+}
+
+.activeIcon {
+  background-color: blue;
 }
 
 #header-icons {
