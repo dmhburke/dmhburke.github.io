@@ -84,7 +84,7 @@ text-align: center;
   margin: 0 auto;
   padding: 0 auto;
   padding-top: 2px;
-  color: lightgrey;
+  color: #15599d;
   font-size: 0.8rem;
   text-align: center;
   outline: none;
@@ -138,11 +138,11 @@ letter-spacing: 0.1rem;
 }
 
 .dismiss {
-  width: 5%;
-  display: block;
-  position: absolute;
-  left: 295px;
-  top: 150px;
+  width: 6%;
+  display: none;
+  position: relative;
+  left: 115px;
+  top: 10px;
 }
 
 
@@ -420,8 +420,8 @@ border: 1px solid white;
 
 .Leaderboard-main {
   display: grid;
-  grid-template-columns: 1fr repeat(1,350px) 1fr;
-  grid-template-rows: 115px repeat(1,400px) 75px;
+  grid-template-columns: 1fr repeat(1,325px) 1fr;
+  grid-template-rows: 113px repeat(1,420px) 75px;
   height: 100%;
   width: 100%;
   justify-content: center;
@@ -431,7 +431,7 @@ border: 1px solid white;
     height: 100%;
     width: 100%;
     position: absolute;
-    background-image: URL("http://www.celebritysports.co.uk/images/sized/images/articles/WoodsMickelson-600x798.jpg");
+    background-image: URL("https://www.golf.com/wp-content/uploads/2017/03/tiger-woods-1997.jpg");
     background-repeat: no-repeat;
     background-size: auto 500px;
     background-position: center;
@@ -449,7 +449,7 @@ border: 1px solid white;
     -moz-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
     box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
     border-radius: 10px;
-    opacity: 0.6;
+    opacity: 0.7;
     background-color: black;
   }
 
@@ -465,35 +465,74 @@ border: 1px solid white;
     -webkit-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
     -moz-box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
     box-shadow: 5px 6px 235px -26px rgba(117,117,117,1);
-    border-radius: 10px;
+    border-radius: 0px;
+    overflow: scroll;
 
   }
 
   .leader-table {
     table-layout: fixed;
-    width: 100%;
-    font-size: 0.8rem;
+    width: 95%;
+    font-size: 0.7rem;
     font-weight: 400;
     padding: 10px 0px 10px 0px;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin: 0px auto;
+    border-radius: 0px;
+  }
+
+  table {
+    border-collapse: collapse;
+    position: relative;
+    top: 8px;
+    border-radius: 0px;
+    border-bottom: 2px solid white;
+  }
+
+  th {
+    background-color: #15599d;
+    color: white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    font-weight: 400;
+    height: 35px;
+  }
+
+  td {
+    border-bottom: 1px dotted grey;
+    height: 30px;
   }
 
   .LeaderName {
-    width: 60%;
-    height: 40px;
+    width: 95%;
     padding-left: 5px;
+    padding-right: 2px;
     text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+
+    #LeadHead {
+      padding-left: 8px;
+      font-weight: bold;
     }
 
   .GrandTotal {
     width: 25%;
+    font-weight: bold;
     }
 
   .DayTotal {
     width: 25%;
     }
+
+  .LBPlayerNo {
+    width: 15px;
+    display: inline-block;
+    vertical-align: 50%;
+  }
 
   .LBPlayerImg {
     width: 25px;
@@ -504,6 +543,8 @@ border: 1px solid white;
   .LBPlayerText{
     display: inline-block;
     vertical-align: 50%;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
 
