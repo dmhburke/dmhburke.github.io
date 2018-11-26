@@ -337,7 +337,7 @@ border: 1px solid white;
     height: 90%;
     width: 100%;
     background-color: #15599d;
-    opacity: 0.5;
+    opacity: 0.7  ;
     border-radius: 10px;
   }
 
@@ -346,7 +346,7 @@ border: 1px solid white;
     z-index: 1;
     height: 90%;
     width: 100%;
-    background-image: URL("https://golftourney-arpjhjcmhvhe.netdna-ssl.com/wp-content/uploads/2015/01/leaderboard.jpg");
+    background-image: URL("LeaderboardBackground.jpg");
     background-repeat: no-repeat;
     background-size: auto 200px;
     background-position: top;
@@ -371,7 +371,7 @@ border: 1px solid white;
     height: 90%;
     width: 100%;
     background-color: #15599d;
-    opacity: 0.4;
+    opacity: 0.7;
     border-radius: 10px;
   }
 
@@ -380,7 +380,7 @@ border: 1px solid white;
     z-index: 1;
     height: 90%;
     width: 100%;
-    background-image: URL("http://www.sportsandoutdoorstips.com/wp-content/uploads/2017/03/How-to-Understand-a-Golf-Sc.gif");
+    background-image: URL("EnterScoresBackground.jpg");
     background-repeat: no-repeat;
     background-size: auto 200px;
     background-position: top;
@@ -405,7 +405,7 @@ border: 1px solid white;
     height: 90%;
     width: 100%;
     background-color: #15599d;
-    opacity: 0.4;
+    opacity: 0.7;
     border-radius: 10px;
   }
 
@@ -414,7 +414,7 @@ border: 1px solid white;
     z-index: 1;
     height: 90%;
     width: 100%;
-    background-image: URL("https://media.golfdigest.com/photos/55d4e2d44759c60c08238ae1/master/pass/courses-2009-04-coar01_19thhole.jpg");
+    background-image: URL("TourDetailsBackground.jpg");
     background-repeat: no-repeat;
     background-size: auto 210px;
     background-position: top;
@@ -551,6 +551,7 @@ border: 1px solid white;
     width: 25px;
     display: inline-block;
     border-radius: 25px;
+    z-index: 10;
   }
 
   .LBPlayerText{
