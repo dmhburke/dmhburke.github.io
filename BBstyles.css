@@ -428,7 +428,7 @@ border: 1px solid white;
 .Leaderboard-main {
   display: grid;
   grid-template-columns: 1fr repeat(1,325px) 1fr;
-  grid-template-rows: 105px repeat(1,468px) 100px;
+  grid-template-rows: 105px repeat(1,440px) 100px;
   height: 100%;
   width: 100%;
   justify-content: center;
@@ -515,7 +515,7 @@ border: 1px solid white;
 
   td {
     border-bottom: 1px dotted grey;
-    height: 35px;
+    height: 40px;
   }
 
   .LeaderName {

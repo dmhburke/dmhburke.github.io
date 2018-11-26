@@ -41,9 +41,17 @@ function flipCardBack() {
 
 flipButton.onclick = flipCardBack;
 
-//*** PASSWORD CHECK ***//
+/*** PASSWORD CHECK
 
 let passwordEnter = document.querySelector(".passwordEnter");
+let passwordText = document.querySelector(".enterPassword");
+
+if(passwordEnter.value == "Password") {
+  passwordText.style.color = 'black';
+} else {
+  passwordText.style.color = 'red';
+}
+*/
 
 //***Show dropdown//
 
