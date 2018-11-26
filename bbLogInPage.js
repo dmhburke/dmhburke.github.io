@@ -41,29 +41,15 @@ function flipCardBack() {
 
 flipButton.onclick = flipCardBack;
 
-/*** PASSWORD CHECK
+let passwordText = document.querySelector(".passwordEnter");
+let changeText = document.querySelector(".enterPassword");
+let linkElement = document.querySelector(".entryLink");
 
-let passwordEnter = document.querySelector(".passwordEnter");
-let passwordText = document.querySelector(".enterPassword");
-
-if(passwordEnter.value == "Password") {
-  passwordText.style.color = 'black';
-} else {
-  passwordText.style.color = 'red';
-}
-*/
-
-//***Show dropdown//
-
-let dropdown = document.querySelector(".dropdown");
-let dropdownContent = document.querySelector(".dropdown-content");
-let activePlayer = document.querySelector(".playerName:hover");
-
-function showDropdown() {
-      if(dropdownContent.style.display === 'block') {
-        dropdownContent.style.display = 'none';
-      } else {
-        dropdownContent.style.display = 'block';
-      }
+function validatePass() {
+  if(passwordText.value == "stitchup") {
+    linkElement.href = "BBagenda.html";
+  } else {
+    changeText.innerHTML = "Wrong password"
+    return false;
   }
-dropdown.onclick = showDropdown;
+}
