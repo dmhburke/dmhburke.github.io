@@ -551,6 +551,7 @@ border: 1px solid white;
     width: 25px;
     display: inline-block;
     border-radius: 25px;
+    position: relative;
     z-index: 10;
   }
 
