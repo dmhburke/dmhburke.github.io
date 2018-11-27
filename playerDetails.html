@@ -12,6 +12,11 @@
 
 <!-- START content body -->
 <body>
+  <script id="playerDetailsFill" type="text/x-handlebars-template">
+    {{#each players}}
+    <div class="playerCards">{{this}}</div>
+    {{/each}}
+  </script>
 
   <div class="header">
       <div class="IconBox home-exit">
@@ -24,44 +29,14 @@
       <a href="TourDetails.html"><img src="tourDetails.svg" id="header-icons"></a></div>
       <div class="IconBox home-exit">
     <a href="bbLogInPage.html"><img src="logOut.svg" id="header-icons"></a></div>
-      <div class="subHeaderText"></div>
   </div>
 
-  <div class="TourDetails-main">
-
-    <div class="homepage TourSchedule">
-      <a href="##"><img id="homepageLogo" src=TourSchedule.svg></a>
-      <span id="homepageText">Tour schedule</span>
-      </div>
-        <div class="filter-TourSchedule"></div>
-        <div class="image-TourSchedule"></div>
-
-    <div class="homepage PlayerDetails">
-      <a href="playerDetails.html"><img id="homepageLogo" src=PlayerDetails.svg></a>
-      <span id="homepageText">Player details</span>
-      </div>
-        <div class="filter-PlayerDetails"></div>
-        <div class="image-PlayerDetails"></div>
-
-    <div class="homepage TourHistory">
-      <a href="##"><img id="homepageLogo" src=TourHistory.svg></a>
-      <span id="homepageText">Tour history</span>
-      </div>
-        <div class="filter-TourHistory"></div>
-        <div class="image-TourHistory"></div>
-
-      </div>
-
-      </div>
-
-
-
-
-
-
-
-
+  <div class="subHeaderText" id="subHeaderPlayerDetails">Player Details</div>
+  <div class="headerBuffer"></div>
+  <div id="playerList"></div>
 
 </body>
 <!-- END content body -->
+<script src="bbLogInPage.js"></script>
+<script src="HandlebarsLibrary.js"></script>
 </html>

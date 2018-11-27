@@ -17,8 +17,8 @@ function dismissAppear() {
 }
 
 function flipCard() {
-  flipToInput();
-  setTimeout(dismissAppear(),5000);
+  flipToInput()
+  setTimeout(dismissAppear,2000);
 }
 
 cardOne.onclick = flipCard;
@@ -36,10 +36,12 @@ function dismissDisappear(){
 
 function flipCardBack() {
   flipBack();
-  setTimeout(dismissDisappear(),5000);
+  dismissDisappear();
 }
 
 flipButton.onclick = flipCardBack;
+
+//Password validation//
 
 let passwordText = document.querySelector(".passwordEnter");
 let changeText = document.querySelector(".enterPassword");
@@ -52,4 +54,21 @@ function validatePass() {
     changeText.innerHTML = "Wrong password"
     return false;
   }
-}
+};
+
+//Player card creation//
+
+const source = document.getElementById('playerDetailsFill').innerHTML;
+const template = Handlebars.compile(source);
+
+const context = {
+    players: ["Daniel Burke", "Phil Rosengreen", "Tim Stuart"]
+};
+
+const compiledHtml = template(context);
+
+const displayPlayers = document.getElementById('playerList');
+displayPlayers.innerHTML = compiledHtml;
+
+
+//END//
