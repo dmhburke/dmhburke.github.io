@@ -207,6 +207,7 @@ letter-spacing: 0.1rem;
   position: fixed;
   top: 0px;
   left: 0px;
+  border-bottom: 3px solid white;
 }
 .IconBox {
   border: 1px solid white;
@@ -232,8 +233,9 @@ border: 1px solid white;
 
 .subHeaderText {
 height: 15px;
-position: absolute;
+position: fixed;
 z-index: 100;
+top: 71px;
 font-size: 0.7rem;
 padding-top: 0.1%;
 text-align: center;
@@ -905,31 +907,126 @@ color: white;
 /**** PLAYER DETAILS ****/
 
 #subHeaderPlayerDetails {
-  top: 73px;
   left: 222px;
 }
 
 .headerBuffer {
-width: 100%;
-height: 120px;
-border: 1px solid black;
+  width: 100%;
+  height: 90px;
 }
 
 .playerCards {
-width: 320px;
-height: 80px;
-border: 1px solid black;
+width: 300px;
+height: 90px;
+border: 2px solid #15599d;
 border-radius: 10px;
-margin: 10px auto;
-padding: 5px;
+margin: 15px auto;
+padding-top: 4px;
+background-color: #faf7fa;
+font-size: 0.75rem;
+-webkit-box-shadow: 0px 0px 19px 0px rgba(133,130,133,1);
+-moz-box-shadow: 0px 0px 19px 0px rgba(133,130,133,1);
+box-shadow: 0px 0px 19px 0px rgba(133,130,133,1);
 }
 
-#playerList{
-  margin: 0 15%;
-  width: 40%;
+#playerCardPlayerNo {
+  width: 45px;
+  font-size: 0.5rem;
+  font-weight: bold;
+  color: #15599d;
+  text-align: left;
+  position: relative;
+  padding-left: 5px;
+  left: 68px;
+  top:10px;
+  background-color: none;
+  border-radius: 2px;
+}
+
+#playerCardImage {
+  width: 18%;
+  border-radius: 100%;
+  border: 1px solid white;
+  vertical-align: middle;
+  display: relative;
+  margin: 0 4px;
+  -webkit-box-shadow: 0px 3px 5px 3px rgba(204,200,204,1);
+  -moz-box-shadow: 0px 3px 5px 3px rgba(204,200,204,1);
+  box-shadow: 0px 3px 5px 3px rgba(204,200,204,1);
+}
+
+#playerCardName {
+  display: inline-block;
+  margin: 0px 0px 0px 3px;
+  font-weight: normal;
+  color: white;
+  text-overflow: elipsis;
+  white-space: nowrap;
+  width: 37%;
+  background-color: #15599d;
+  padding: 5px 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#playerCardHC {
+  display: inline-block;
+  margin: 0px 2px;
+}
+
+#playerCardTourNo {
+  display: inline-block;
+  margin: 0px 2px;
+}
+
+#playerCardNat {
+  display: inline-block;
+  margin: 0px 3px;
+  width: 8%;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+#playerCardGJ {
+  display: inline-block;
+  margin: 0px 3px;
+  width: 4%;
+  position: relative;
+  left: 275px;
+  bottom: 60px;
+}
+
+#strengths {
+display: inline-block;
+font-size: 0.6rem;
+width: 185px;
+white-space: nowrap;
+position: relative;
+left: 48px;
+bottom: 16px;
+}
+
+#weaknesses {
+display: block;
+font-size: 0.6rem;
+width: 200px;
+white-space: nowrap;
+position: relative;
+left: 69px;
+bottom: 13px;
+overflow: scroll;
+text-overflow: clip;
 }
 
 
+#display{
+    position:absolute;
+    top:90px;
+    width: 100%;
+    height: 1000px;
+    overflow:scroll;
+    z-index:2;
+  }
 
 /**** TOUR HISTORY PAGE
 

@@ -56,19 +56,10 @@ function validatePass() {
   }
 };
 
-//Player card creation//
 
-const source = document.getElementById('playerDetailsFill').innerHTML;
-const template = Handlebars.compile(source);
 
-const context = {
-    players: ["Daniel Burke", "Phil Rosengreen", "Tim Stuart"]
-};
 
-const compiledHtml = template(context);
 
-const displayPlayers = document.getElementById('playerList');
-displayPlayers.innerHTML = compiledHtml;
 
 
 //END//

@@ -12,11 +12,6 @@
 
 <!-- START content body -->
 <body>
-  <script id="playerDetailsFill" type="text/x-handlebars-template">
-    {{#each players}}
-    <div class="playerCards">{{this}}</div>
-    {{/each}}
-  </script>
 
   <div class="header">
       <div class="IconBox home-exit">
@@ -33,10 +28,28 @@
 
   <div class="subHeaderText" id="subHeaderPlayerDetails">Player Details</div>
   <div class="headerBuffer"></div>
-  <div id="playerList"></div>
+  <script id="playerCreator" type="text/x-handlebars-template">
+    {{#each players}}
+  <div class="playerCards">
+    <div id="playerCardPlayerNo">Player {{playerNo}}</div>
+    <img id="playerCardImage" src="PlayerImage{{shortCode}}.jpg">
+    <div id="playerCardName">{{name}}</div>
+    <div id="playerCardHC">HC: {{handicap}}</div>
+    <div id="playerCardTourNo">({{tourNo}})</div>
+    <img id="playerCardNat" src="Flag{{natCode}}.svg">
+    <img id="playerCardGJ" src="{{prevWin}}">
+    <div id="strengths"><b>Strengths:</b> {{strengths}}</div>
+    <div id="weaknesses"><b>Weaknesses:</b> {{weaknesses}}</div>
+  </div>
+  {{/each}}
+  </script>
+
+  <div id="display"></div>
+  <div id="playerDetailsBackground"></div>
 
 </body>
 <!-- END content body -->
-<script src="bbLogInPage.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="HandlebarsLibrary.js"></script>
+<script src="GolfJQ.js"></script>
 </html>
