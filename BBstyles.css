@@ -990,7 +990,7 @@ box-shadow: 0px 0px 19px 0px rgba(133,130,133,1);
 #playerCardGJ {
   display: inline-block;
   margin: 0px 3px;
-  width: 4%;
+  width: 5%;
   position: relative;
   left: 275px;
   bottom: 60px;
@@ -998,17 +998,18 @@ box-shadow: 0px 0px 19px 0px rgba(133,130,133,1);
 
 #strengths {
 display: inline-block;
-font-size: 0.6rem;
+font-size: 0.5rem;
 width: 185px;
 white-space: nowrap;
 position: relative;
-left: 48px;
+left: 45px;
 bottom: 16px;
+color: #383735;
 }
 
 #weaknesses {
 display: block;
-font-size: 0.6rem;
+font-size: 0.5rem;
 width: 200px;
 white-space: nowrap;
 position: relative;
@@ -1016,6 +1017,7 @@ left: 69px;
 bottom: 13px;
 overflow: scroll;
 text-overflow: clip;
+color: #383735;
 }
 
 
@@ -1030,11 +1032,19 @@ text-overflow: clip;
 
 /**** TOUR SCHEDULE ****/
 
+.TourScheduleMain {
+width: 100%;
+}
+
 .dayContainer {
   height: 100px;
   width: 320px;
-  margin: 25px auto;
-  background-color: lightgrey;
+  margin: 30px auto;
+  background-color: #f2f0ee;
+  position: relative;
+  top: 0px;
+  display: static;
+  top: 0px;
 }
 
 .daySelector {
@@ -1044,7 +1054,7 @@ background-color: #15599d;
 color: white;
 font-weight: bold;
 text-align: center;
-padding-top: 35px;
+padding-top: 40px;
 display: inline-block;
 }
 
@@ -1059,7 +1069,8 @@ display: inline-block;
 .schTitleBox {
   height: 15%;
   width: 25%;
-  margin: 0px 9px;
+  margin: 0px 8px;
+  margin-top: 10px;
   font-weight: bold;
   color:#15599d;
   display:inline-block;
@@ -1070,18 +1081,19 @@ display: inline-block;
 }
 
 .schIconBox {
-  border: 1px solid #15599d;
+  border: 1.5px solid #15599d;
   height: 43%;
-  width: 24%;
+  width: 20%;
   display:inline-block;
-  margin: 0px 10px;
+  margin: 0px 15px;
+  margin-top: 0px;
   border-radius: 5px;
 }
 
 .schMoreBox{
   height: 30%;
   width: 25%;
-  margin: 0px 9px;
+  margin: 0px 8px;
   display:inline-block;
   border-radius: 5px;
   font-size: 0.6rem;
@@ -1092,8 +1104,29 @@ display: inline-block;
 
 .plusButton {
   width: 30%;
-  padding-top: 2px;
+  padding-top: 0px;
   padding-bottom: 10px;
+}
+
+.schContentChild {
+  height: 370px;
+  width: 320px;
+  background-color: #f2f0ee;
+  z-index: 20;
+  position: relative;
+  display: none;
+}
+
+#contentChildOne {
+  background-color: #f2f0ee;
+}
+
+#contentChildTwo {
+  background-color: blue;
+}
+
+#contentChildThree {
+  background-color: red;
 }
 
 /**** TOUR HISTORY PAGE
