@@ -1028,6 +1028,74 @@ text-overflow: clip;
     z-index:2;
   }
 
+/**** TOUR SCHEDULE ****/
+
+.dayContainer {
+  height: 100px;
+  width: 320px;
+  margin: 25px auto;
+  background-color: lightgrey;
+}
+
+.daySelector {
+height: 100px;
+width: 60px;
+background-color: #15599d;
+color: white;
+font-weight: bold;
+text-align: center;
+padding-top: 35px;
+display: inline-block;
+}
+
+.schIconContainer {
+  height: 100px;
+  width: 260px;
+  display: inline-block;
+  position: absolute;
+  padding-top: 7px;
+}
+
+.schTitleBox {
+  height: 15%;
+  width: 25%;
+  margin: 0px 9px;
+  font-weight: bold;
+  color:#15599d;
+  display:inline-block;
+  border-radius: 5px;
+  font-size: 0.6rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.schIconBox {
+  border: 1px solid #15599d;
+  height: 43%;
+  width: 24%;
+  display:inline-block;
+  margin: 0px 10px;
+  border-radius: 5px;
+}
+
+.schMoreBox{
+  height: 30%;
+  width: 25%;
+  margin: 0px 9px;
+  display:inline-block;
+  border-radius: 5px;
+  font-size: 0.6rem;
+  text-align: center;
+  text-transform: capitalize;
+
+}
+
+.plusButton {
+  width: 30%;
+  padding-top: 2px;
+  padding-bottom: 10px;
+}
+
 /**** TOUR HISTORY PAGE
 
 .tourHistory-main {
