@@ -1195,6 +1195,8 @@ filter: grayscale() brightness(100);
   font-size: 0.6rem;
   color: #15599d;
   text-decoration: none;
+  font-weight:normal;
+  overflow: scroll;
 }
 
 .schContentImage {
