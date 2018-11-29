@@ -25,6 +25,7 @@ $(document).ready(()=> {
        $('#contentChildFour').slideToggle();
        $('#plusButtonFive').fadeToggle();
        $('#plusButtonSix').fadeToggle();
+       $('.TourScheduleMain').toggleClass("mainExtendTwo");
      });
 
     $('#plusButtonFive').on('click', () => {
@@ -43,6 +44,7 @@ $(document).ready(()=> {
          $('#contentChildSeven').slideToggle();
          $('#plusButtonEight').fadeToggle();
          $('#plusButtonNine').fadeToggle();
+         $('.TourScheduleMain').toggleClass("mainExtendThree");
        });
 
     $('#plusButtonEight').on('click', () => {
