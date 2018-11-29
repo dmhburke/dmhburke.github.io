@@ -89,7 +89,7 @@ $(document).ready(()=> {
     natCode: 'Can',
     prevWin: '',
     strengths: 'Swing mechanics',
-    weaknesses: 'Having a full set of clubs'
+    weaknesses: 'Maintaining a full set of clubs'
     },
     /*END new player */
     /*START new player */
@@ -112,5 +112,7 @@ $(document).ready(()=> {
 
   const displayElements = document.getElementById('display');
   displayElements.innerHTML = compiledHtml;
+
+//* TOUR SCHEDULE ANIMATIONS*//
 
 })

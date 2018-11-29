@@ -15,11 +15,47 @@ $(document).ready(()=> {
     $('#plusButtonThree').fadeToggle();
     });
 
-  $('#plusButtonThree').on('click', event => {
+  $('#plusButtonThree').on('click', () => {
     $('#contentChildThree').slideToggle();
     $('#plusButtonOne').fadeToggle();
     $('#plusButtonTwo').fadeToggle();
     });
+
+    $('#plusButtonFour').on('click', () => {
+       $('#contentChildFour').slideToggle();
+       $('#plusButtonFive').fadeToggle();
+       $('#plusButtonSix').fadeToggle();
+     });
+
+    $('#plusButtonFive').on('click', () => {
+      $('#contentChildFive').slideToggle();
+      $('#plusButtonFour').fadeToggle();
+      $('#plusButtonSix').fadeToggle();
+      });
+
+    $('#plusButtonSix').on('click', () => {
+      $('#contentChildSix').slideToggle();
+      $('#plusButtonFour').fadeToggle();
+      $('#plusButtonFive').fadeToggle();
+      });
+
+    $('#plusButtonSeven').on('click', () => {
+         $('#contentChildSeven').slideToggle();
+         $('#plusButtonEight').fadeToggle();
+         $('#plusButtonNine').fadeToggle();
+       });
+
+    $('#plusButtonEight').on('click', () => {
+        $('#contentChildEight').slideToggle();
+        $('#plusButtonSeven').fadeToggle();
+        $('#plusButtonNine').fadeToggle();
+        });
+
+    $('#plusButtonNine').on('click', () => {
+        $('#contentChildNine').slideToggle();
+        $('#plusButtonSeven').fadeToggle();
+        $('#plusButtonEight').fadeToggle();
+        });
 
 
 /*[New Jquery here]*/

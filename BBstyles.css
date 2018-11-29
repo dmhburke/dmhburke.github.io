@@ -1034,17 +1034,21 @@ color: #383735;
 
 .TourScheduleMain {
 width: 100%;
+height: 850px;
 }
 
 .dayContainer {
   height: 100px;
   width: 320px;
-  margin: 30px auto;
-  background-color: #f2f0ee;
+  margin: 25px auto;
+  background-color: #fcfaf9;
   position: relative;
   top: 0px;
   display: static;
   top: 0px;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(224,220,224,1);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(224,220,224,1);
+  box-shadow: 0px 3px 5px 0px rgba(224,220,224,1);
 }
 
 .daySelector {
@@ -1082,52 +1086,137 @@ display: inline-block;
 
 .schIconBox {
   border: 1.5px solid #15599d;
-  height: 43%;
-  width: 20%;
-  display:inline-block;
+  height: 40px;
+  width: 50px;
+  display: inline-block;
   margin: 0px 15px;
-  margin-top: 0px;
   border-radius: 5px;
+  padding-top: 3px;
+  padding-left: 8px;
 }
 
-.schMoreBox{
-  height: 30%;
-  width: 25%;
-  margin: 0px 8px;
-  display:inline-block;
-  border-radius: 5px;
-  font-size: 0.6rem;
-  text-align: center;
-  text-transform: capitalize;
-
+#tourSchIcon {
+width: 30px;
 }
 
 .plusButton {
-  width: 30%;
-  padding-top: 0px;
-  padding-bottom: 10px;
+  width: 20px;
+  position: absolute;
+  top: 75px;
+}
+
+#plusButtonOne, #plusButtonFour, #plusButtonSeven {
+  position: absolute;
+  left: 29px;
+}
+
+#plusButtonTwo, #plusButtonFive, #plusButtonEight {
+  left: 114px;
+}
+
+#plusButtonThree, #plusButtonSix, #plusButtonNine {
+  left: 199px;
 }
 
 .schContentChild {
   height: 370px;
   width: 320px;
-  background-color: #f2f0ee;
+  background-color: #fcfaf9;
   z-index: 20;
   position: relative;
   display: none;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(224,220,224,1);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(224,220,224,1);
+  box-shadow: 0px 3px 5px 0px rgba(224,220,224,1);
 }
 
-#contentChildOne {
-  background-color: #f2f0ee;
+.schLogoSelector {
+height: 370px;
+width: 60px;
+background-color: #15599d;
+color: white;
+font-weight: bold;
+text-align: center;
+padding-top: 40px;
+display: inline-block;
+padding-top: 20px;
 }
 
-#contentChildTwo {
-  background-color: blue;
+#tourSchGolfIconWhite {
+width: 50px;
+filter: grayscale() brightness(100);
 }
 
-#contentChildThree {
-  background-color: red;
+#schContentTitle {
+  color: #15599d;
 }
+
+.schContentTitle {
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  height: 30px;
+  width: 250px;
+  position: absolute;
+  top: 20px;
+  left: 66px;
+  color: #15599d;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.schContentDetails {
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  height: 100px;
+  width: 125px;
+  position: absolute;
+  top: 60px;
+  left: 66px;
+  padding: 5px 0px;
+  font-size: 0.6rem;
+  color: #15599d;
+  text-decoration: none;
+}
+
+.schContentImage {
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  height: 100px;
+  width: 125px;
+  position: absolute;
+  top: 60px;
+  left: 190px;
+  overflow: hidden;
+}
+
+.schContentMaps {
+
+  height: 190px;
+  width: 250px;
+  position: absolute;
+  top: 170px;
+  left: 66px;
+}
+
+a:link {
+  text-decoration: none;
+  color: hotpink;
+}
+
+a:visited {
+  text-decoration: none;
+  color: hotpink;
+}
+
+#GCwebsite {
+  font-size: 0.6rem;
+  text-decoration: none;
+}
+
+#schContentGCLassing {
+  width: 150px;
+}
+
 
 /**** TOUR HISTORY PAGE
 
