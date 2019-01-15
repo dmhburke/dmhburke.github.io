@@ -800,6 +800,98 @@ color: white;
     justify-self: center;
   }
 
+  /**** ENTER ROUND ONE PAGE ****/
+
+  #subHeaderRoundDetails {
+    left: 166px;
+  }
+
+  .ScoreboardContainerRound1 {
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 90px;
+
+  }
+
+  .ScoreboardButtonRound1 {
+    height: 45px;
+    width: 83%;
+    background-color: #15599d;
+    margin: 0px auto;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 3%;
+    border: 1px solid white;
+    -webkit-box-shadow: 1px 1px 5px 2px rgba(158,158,158,1);
+    -moz-box-shadow: 1px 1px 5px 2px rgba(158,158,158,1);
+    box-shadow: 1px 1px 5px 2px rgba(158,158,158,1);
+
+  }
+
+  #ScoreboardButtonText {
+    font-size: 1.1rem;
+    color: white;
+  }
+
+  .EnterScoresText {
+    font-size: 1.1rem;
+    padding: 5px 0px 5px 0px;
+    margin-left: 40px;
+    color: #15599d;
+    font-weight: bold;
+  }
+
+  .EnterScoresContainerRound1 {
+    background-color: white;
+    height: 420px;
+    width: 100%;
+    position: absolute;
+    top: 160px;
+    border-bottom: 2px solid #15599d;
+
+  }
+
+  .HolesContainerRound1 {
+    height: 85%;
+    width: 85%;
+    background-color: white;
+    margin: 0px auto;
+    position: relative;
+    top: 0px;
+    text-align: center;
+  }
+
+  .HoleEntry, .ScorecardCheck {
+    display: inline-block;
+    margin: 5px 5px;
+    height: 60px;
+    padding: 18px 0;
+    font-weight: bold;
+    border: 1px solid white;
+    -webkit-box-shadow: 1px 1px 5px 2px rgba(158,158,158,1);
+    -moz-box-shadow: 1px 1px 5px 2px rgba(158,158,158,1);
+    box-shadow: 1px 1px 5px 2px rgba(158,158,158,1);
+  }
+
+  .HoleEntry {
+    color: white;
+    background-color: #15599d;
+    width: 60px;
+    border-radius: 55px;
+    font-size: 1.1rem;
+  }
+  .ScorecardCheck {
+    background-color: lightgrey;
+    width: 134px;
+    border-radius: 55px;
+    font-size: 1rem;
+  }
+
   /**** TOUR DETAILS PAGE ****/
 
   .TourDetails-main {
@@ -1527,4 +1619,13 @@ a:visited {
   margin-bottom: 20px;
   width: 150px;
   display: block;
+}
+
+.linearGradMain {
+  height: 500px;
+  width: 100%;
+  border: 1px solid black;
+  background-image: linear-gradient(to right, rgba(250, 0, 0, 0.9), rgba(0,0,0,0.1)), url(playerImageDB.jpg);
+  background-size: cover;
+  background-position: center;
 }
