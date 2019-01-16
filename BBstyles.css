@@ -806,31 +806,35 @@ color: white;
     left: 166px;
   }
 
-  .ScoreboardContainerRound1 {
-    background-color: white;
-    height: 70px;
+  .EnterScoresContainerRound1 {
+    background-color: grey;
+    height: 460px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     position: absolute;
     top: 90px;
-
+    border-bottom: 2px solid #15599d;
+    background-image:
+    linear-gradient(
+      rgba(21, 89, 157, 0.4),
+      rgba(21, 89, 157, 0.4)
+      ),URL("golfCourseBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 500px;
+    background-position: top;
   }
 
   .ScoreboardButtonRound1 {
     height: 45px;
     width: 83%;
     background-color: #15599d;
-    margin: 0px auto;
+    margin: 10px auto;
     border-radius: 10px;
     text-align: center;
-    padding-top: 3%;
+    padding-top: 2.75%;
     border: 1px solid white;
-    -webkit-box-shadow: 1px 1px 5px 2px rgba(158,158,158,1);
-    -moz-box-shadow: 1px 1px 5px 2px rgba(158,158,158,1);
-    box-shadow: 1px 1px 5px 2px rgba(158,158,158,1);
-
+    -webkit-box-shadow: 2px 2px 15px -2px rgba(252,252,252,1);
+    -moz-box-shadow: 2px 2px 15px -2px rgba(252,252,252,1);
+    box-shadow: 2px 2px 15px -2px rgba(252,252,252,1);
   }
 
   #ScoreboardButtonText {
@@ -843,18 +847,8 @@ color: white;
     font-size: 1.1rem;
     padding: 0px 0px 5px 0px;
     margin-left: 40px;
-    color: #15599d;
+    color: white;
     font-weight: bold;
-  }
-
-  .EnterScoresContainerRound1 {
-    background-color: white;
-    height: 405px;
-    width: 100%;
-    position: relative;
-    top: 160px;
-    border-bottom: 2px solid #15599d;
-
   }
 
   .HolesContainerRound1 {
@@ -873,9 +867,9 @@ color: white;
     height: 60px;
     padding: 16px 0;
     border: 3px solid white;
-    -webkit-box-shadow: 1px 1px 5px 2px rgba(158,158,158,1);
-    -moz-box-shadow: 1px 1px 5px 2px rgba(158,158,158,1);
-    box-shadow: 1px 1px 5px 2px rgba(158,158,158,1);
+    -webkit-box-shadow: 2px 2px 15px -2px rgba(252,252,252,1);
+-moz-box-shadow: 2px 2px 15px -2px rgba(252,252,252,1);
+box-shadow: 2px 2px 15px -2px rgba(252,252,252,1);
   }
 
   .HoleEntry {
