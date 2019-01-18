@@ -19,7 +19,7 @@ showScoreboard.onclick = scoreboardToggle;
 
 let openScore1 = document.querySelector(".holeEntry");
 let scoreEntryPage1 = document.querySelector(".scoreEntryOne");
-let submitScore1 = document.querySelector(".submitCheckMark");
+let submitScore1 = document.getElementById("submitCheckMark");
 
 function scoreEntry1() {
   scoreEntryPage1.style.visibility = "visible"

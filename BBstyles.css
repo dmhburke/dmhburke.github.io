@@ -912,46 +912,56 @@ color: white;
   */
 
   .scoreEntryOne {
-    height: 330px;
-    width: 250px;
+    height: 350px;
+    width: 285px;
     background-color: #F2F2F2;
     z-index: 100;
-    position: absolute;
-    top: 189px;
-    left: 65px;
+    position: relative;
+    top: 50%;
+    transform: translateY(52%);
+    margin: 0 auto;
     border: 2px solid white;
     border-radius: 10px;
     visibility: hidden;
-    box-sizing: border-box;
-    font-size: 0.8rem;
-    -webkit-box-shadow: 2px 2px 52px -2px rgba(186,182,186,1);
-    -moz-box-shadow: 2px 2px 52px -2px rgba(186,182,186,1);
-    box-shadow: 2px 2px 52px -2px rgba(186,182,186,1);
+    box-shadow: 1px 1px 20px 2px rgba(186,182,186,1);
   }
 
 /* Container for Hole details */
   .HoleDetailsContainer {
-    height: 58px;
+    height: 60px;
     width: 100%;
     z-index: 200;
-    border-bottom: 1px solid grey;
-    padding: 0px;
+    border-bottom: 3px solid #15599d;
+  }
+
+  .ScoreEntryHoleNo {
+    height: 50px;
+    width: 50px;
+    border: 3px solid white;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    background-color: #15599d;
+    box-shadow: 2px 2px 5px -1px rgba(71,70,71,1);
+    position: relative;
+    margin: 0px auto;
+    padding-top: 10px;
+
     }
 
   .ScoreEntryPar, .ScoreEntryIndex {
     position: absolute;
-    display: inline-block;
     top: 33px;
     color: #15599d;
     font-weight: 500;
-
     }
 
   .ScoreEntryPar {
-    left: 44px;
+    left: 50px;
     }
   .ScoreEntryIndex {
-    left: 161px;
+    left: 184px;
     }
 
     #parIcon, #indexIcon {
@@ -959,163 +969,171 @@ color: white;
       height: 22px;
       top: 10px;
     }
-
     #parIcon {
-      left: 49px;
+      left: 60px;
     }
     #indexIcon {
-      left: 176px;
-    }
-
-  .ScoreEntryHoleNo {
-    height: 50px;
-    width: 50px;
-    border: 3px solid white;
-    border-radius: 50px;
-    display: inline-block;
-    text-align: center;
-    position: absolute;
-    left: 95px;
-    top: 3px;
-    padding-top: 9px;
-    color: white;
-    font-size: 1.3rem;
-    background-color: #15599d;
-    box-shadow: 2px 2px 5px -1px rgba(71,70,71,1);
+      left: 200px;
     }
 
 /* Container for Entry Header Row */
 
   .PlayerHeaderContainer {
-    height: 41px;
+    height: 40px;
     width: 100%;
     z-index: 200;
-    border-top: 3px solid #15599d;
-    padding-top: 8px;
-    margin-bottom: 2px;
+    margin: 5px 0px 0px 0px;
+    position: fixed;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: flex-start;
     }
 
   .HeaderRowPlayer, .HeaderRowScore {
-    height: 28px;
-    display: inline-block;
+    height: 35px;
     background-color: #15599d;
     text-align: center;
     color: white;
-    padding-top: 5px;
+    display: inline-block;
+    margin: 0px 1%;
     box-shadow: 2px 2px 5px -1px rgba(71,70,71,1);
+    padding-top: 10px;
 
     }
 
   .HeaderRowPlayer {
-    width: 158px;
+    width: 70%;
     margin-left: 5px;
     }
 
   .HeaderRowScore {
-    width: 70px;
+    width: 24%;
     }
 
 /* Container for Score entries */
 
   .ScoreEntryContainer {
-    height: 169px;
+    height: 58%;
     width: 100%;
+    position: relative;
+    top: 10%;
     background-color: #F2f2f2;
-    z-index: 200;
     overflow: scroll;
+    border-bottom: 3px solid #15599D;
   }
 
-  .ScoreEntryGroupContainer {
-    height: 132px;
+  .groupContainer {
     width: 100%;
-    background-color: #f3f3f3;
-    padding-top: 2px;
-    margin-top: 1px;
-    margin-bottom: 5px;
-    border-bottom: 3px solid lightgrey;
+    margin: 0px auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid lightgrey;
   }
 
-  .ScoreEntryPlayer, .ScoreEntryScore {
-    height: 28px;
-    display: inline-block;
-    background-color: white;
-    text-align: center;
-    color: black;
-    padding-top: 3px;
-    box-shadow: 1px 1px 5px -1px rgba(71,70,71,1);
-    }
-
-  .ScoreEntryPlayer {
-    width: 158px;
+  .title {
+    color: lightgrey;
     margin-left: 5px;
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+
+  .row {
+    background-color: white;
+    height: 40px;
+    width: 96%;
+    margin: 5px auto;
+    padding: 4px;
+    box-shadow: 2px 2px 2px -2px rgba(186,182,186,1);
+    display: flex;
+    justify-content:flex-end;
+  }
+
+  .scoreboardPlayerImage {
+    height: 30px;
+    border-radius: 35px;
+    vertical-align: middle;
+    margin-top: 1px;
+  }
+
+  .nameInput {
+    color: #15599d;
+    text-align: right;
+    width: 230px;
     }
 
-  .ScoreEntryScore {
-    width: 70px;
+  .scoreInput {
+    width: 62px;
+    height: 32px;
+    padding: 0px 0px;
+    margin-left: 35px;
+    border: none;
+    background-color: #f2f2f2;
+    text-align: center;
+    font-family: verdana;
+    font-size: 1.1rem;
+    color: #15599d;
+    outline: none;
     }
 
+    .row:focus-within {
+      box-shadow: 1px 1px 2px #15599d;
+      font-weight: bold;
+    }
+
+    input[type=text]:focus {
+      box-shadow: 0 0 10px #15599d;
+      -webkit-transition: all 0.30s ease-in-out;
+      -moz-transition: all 0.30s ease-in-out;
+      -ms-transition: all 0.30s ease-in-out;
+      -o-transition: all 0.30s ease-in-out;
+    }
 
   /* Container for Nav options */
 
   .NavButtonContainer {
-    height: 54px;
+    height: 65px;
     width: 100%;
     z-index: 200;
-    border-top: 3px solid #15599D;
-  }
+    }
+  #submitCheckMark {
+    height: 45px;
+    display: block;
+    position: relative;
+    margin: 0px auto;
+    top: 100%;
+    margin-top: -28px;
+    }
 
-  .NavPreviousHoleText, .NavNextHoleText {
-    display: inline-block;
+  .prevHoleButton, .nextHoleButton {
+    position: absolute;
+    height: 50px;
+    width: 75px;
+    box-sizing: content-box;
+    top: 295px;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    width: 60px;
-    margin-top: 12px;
-    color: black;
-
-    font-weight: normal;
-    line-height: 0.9rem;
+    }
+  .prevHoleButton {
+    left: 5px;
+    }
+  .nextHoleButton {
+    left: 196px
     }
 
-  .NavPreviousHoleText {
-    margin-left: 22px;
-    }
-
-  .NavNextHoleText {
-    margin-left: 82px;
+  .prevHoleText, .nextHoleText {
+    width: 70%;
+    display: inline-block;
+    position: relative;
+    padding-top: 13px;
+    line-height: 0.8rem;
+    color: #15599D;
+    font-weight: 500;
     }
 
   #nextArrow, #previousArrow {
-    position: absolute;
+  width: 25px;
   }
-
-  #nextArrow {
-    width: 40px;
-    left: 210px;
-    top: 278px;
-  }
-
-  #previousArrow {
-    width: 28px;
-    left: 7px;
-    top: 285px;
-  }
-
-  .NavSubmitButton {
-    height: 45px;
-    width: 45px;
-    display: inline-block;
-    position: absolute;
-    left: 102px;
-    top: 282px;
-    padding: 0 auto;
-    }
-
-  .submitCheckMark {
-      height: 40px;
-      margin-left: 0px;
-      margin-top: 0px;
-    }
-
-
 
   /**** TOUR DETAILS PAGE ****/
 
