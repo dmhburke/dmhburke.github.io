@@ -912,13 +912,13 @@ color: white;
   */
 
   .scoreEntryOne {
-    height: 350px;
-    width: 285px;
+    height: 375px;
+    width: 310px;
     background-color: #F2F2F2;
     z-index: 100;
     position: relative;
-    top: 50%;
-    transform: translateY(52%);
+    top: 25%;
+    transform: translateY(41%);
     margin: 0 auto;
     border: 2px solid white;
     border-radius: 10px;
@@ -958,10 +958,10 @@ color: white;
     }
 
   .ScoreEntryPar {
-    left: 50px;
+    left: 60px;
     }
   .ScoreEntryIndex {
-    left: 184px;
+    left: 210px;
     }
 
     #parIcon, #indexIcon {
@@ -970,10 +970,10 @@ color: white;
       top: 10px;
     }
     #parIcon {
-      left: 60px;
+      left: 67px;
     }
     #indexIcon {
-      left: 200px;
+      left: 225px;
     }
 
 /* Container for Entry Header Row */
@@ -992,22 +992,30 @@ color: white;
   .HeaderRowPlayer, .HeaderRowScore {
     height: 35px;
     background-color: #15599d;
-    text-align: center;
     color: white;
     display: inline-block;
     margin: 0px 1%;
     box-shadow: 2px 2px 5px -1px rgba(71,70,71,1);
+    text-align: center;
     padding-top: 10px;
-
     }
 
   .HeaderRowPlayer {
     width: 70%;
     margin-left: 5px;
+    text-align: right;
+    padding-right: 37px;
     }
 
   .HeaderRowScore {
     width: 24%;
+    }
+
+  #headerRowGolfPlayer {
+    height: 30px;
+    position: absolute;
+    left: 22px;
+    top: 3px;
     }
 
 /* Container for Score entries */
@@ -1043,13 +1051,14 @@ color: white;
     width: 96%;
     margin: 5px auto;
     padding: 4px;
+    padding-right: 7px;
     box-shadow: 2px 2px 2px -2px rgba(186,182,186,1);
     display: flex;
     justify-content:flex-end;
   }
 
   .scoreboardPlayerImage {
-    height: 30px;
+    height: 33px;
     border-radius: 35px;
     vertical-align: middle;
     margin-top: 1px;
@@ -1058,14 +1067,14 @@ color: white;
   .nameInput {
     color: #15599d;
     text-align: right;
-    width: 230px;
+    width: 240px;
     }
 
   .scoreInput {
     width: 62px;
     height: 32px;
     padding: 0px 0px;
-    margin-left: 35px;
+    margin-left: 45px;
     border: none;
     background-color: #f2f2f2;
     text-align: center;
@@ -1095,21 +1104,56 @@ color: white;
     width: 100%;
     z-index: 200;
     }
+
   #submitCheckMark {
-    height: 45px;
+    height: 48px;
     display: block;
     position: relative;
     margin: 0px auto;
     top: 100%;
-    margin-top: -28px;
+    margin-top: -22px;
     }
+
+.lds-hourglass {
+  position: absolute;
+  left: 120px;
+  top: 310px;
+  width: 60px;
+  height: 60px;
+  visibility: hidden;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 6px;
+  box-sizing: border-box;
+  border: 26px solid #419B5A;
+  border-color: #419B5A transparent #419B5A transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
 
   .prevHoleButton, .nextHoleButton {
     position: absolute;
     height: 50px;
     width: 75px;
     box-sizing: content-box;
-    top: 295px;
+    top: 317px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -1118,7 +1162,7 @@ color: white;
     left: 5px;
     }
   .nextHoleButton {
-    left: 196px
+    left: 220px
     }
 
   .prevHoleText, .nextHoleText {
