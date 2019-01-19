@@ -45,17 +45,19 @@ openScore1.onclick = scoreEntry1;
 
 function scoreEntryClose() {
   scoreEntryPage1.style.visibility = "hidden"
+  submitScore1.style.visibility = "hidden";
 }
 
 function  spinnerGo() {
   spinnerIcon.style.visibility = "hidden"
+  submitScore1.style.visibility = "visible";
 }
 
 function recordScore1() {
   submitScore1.style.visibility = "hidden"
   spinnerIcon.style.visibility = "visible"
+  setTimeout(spinnerGo,1000);
   setTimeout(scoreEntryClose,1500);
-  setTimeout(spinnerGo,1500);
   }
 
 submitScore1.onclick = recordScore1;
