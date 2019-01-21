@@ -34,14 +34,14 @@ function scoreEntryClose1() {
   scoreEntryPage1.style.visibility = "hidden"
   submitScore1.style.visibility = "hidden";
 }
-function  spinnerGo() {
+function  spinnerGo1() {
   spinnerIcon1.style.visibility = "hidden"
   submitScore1.style.visibility = "visible";
 }
 function recordScore1() {
   submitScore1.style.visibility = "hidden"
   spinnerIcon1.style.visibility = "visible"
-  setTimeout(spinnerGo,1000)
+  setTimeout(spinnerGo1,1000)
   setTimeout(scoreEntryClose1,1500);
   }
 
@@ -51,7 +51,7 @@ submitScore1.onclick = recordScore1;
 let openScore2 = document.querySelector(".holeEntry.Hole2");
 let scoreEntryPage2 = document.querySelector(".scoreEntryTwo");
 let submitScore2 = document.querySelector(".submitCheckMark.Hole2");
-//let spinnerIcon2 = document.querySelector(".lds-hourglass.Hole2");
+let spinnerIcon2 = document.querySelector(".lds-hourglass.Hole2");
 
 function scoreEntry2() {
   scoreEntryPage2.style.visibility = "visible"
@@ -62,14 +62,14 @@ function scoreEntryClose2() {
   scoreEntryPage2.style.visibility = "hidden"
   submitScore2.style.visibility = "hidden";
 }
-function  spinnerGo() {
-  //spinnerIcon2.style.visibility = "hidden"
+function  spinnerGo2() {
+  spinnerIcon2.style.visibility = "hidden"
   submitScore2.style.visibility = "visible";
 }
 function recordScore2() {
   submitScore2.style.visibility = "hidden"
-  //spinnerIcon2.style.visibility = "visible"
-  setTimeout(spinnerGo,1000);
+  spinnerIcon2.style.visibility = "visible"
+  setTimeout(spinnerGo2,1000);
   setTimeout(scoreEntryClose2,1500);
   }
 submitScore2.onclick = recordScore2;
