@@ -34,8 +34,8 @@
     <div class="scoreboardRound1"></div>
     <div class="EnterScoresText">Enter scores</div>
       <div class="HolesContainerRound1">
-      <div class="holeEntry">1</div>
-      <div class="holeEntry">2</div>
+      <div class="holeEntry Hole1">1</div>
+      <div class="holeEntry Hole2">2</div>
       <div class="holeEntry">3</div>
       <div class="holeEntry"id="CTP">4</div>
       <div class="holeEntry">5</div>
@@ -76,81 +76,94 @@
 
         <div class="groupContainer"> <!-- Group 1 -->
 
-            <div class="row">
-              <img src="PlayerImageDB.jpg" class="scoreboardPlayerImage">
-              <form class="nameInput" id="Player1">Daniel Burke<input type="tel" name="PlayerOne" class="scoreInput"></form>
+            <div class="row" id="PlayerOne">
+              <img class="imageInput" src="PlayerImageDB.jpg">
+              <div class="nameInput">Daniel Burke</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
             </div>
 
-            <div class="row">
-              <img src="PlayerImageDB.jpg" class="scoreboardPlayerImage">
-              <form class="nameInput">Steve Gafen<input type="tel" name="PlayerOne" class="scoreInput"></form>
+            <div class="row" id="PlayerTwo">
+              <img class="imageInput" src="PlayerImageDB.jpg">
+              <div class="nameInput">Daniel Burke</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
             </div>
 
-            <div class="row">
-              <img src="PlayerImageDB.jpg" class="scoreboardPlayerImage">
-              <form class="nameInput">Phil Rosengreen<input type="tel" name="PlayerOne" class="scoreInput"></form>
+            <div class="row" id="PlayerThree">
+              <img class="imageInput" src="PlayerImageDB.jpg">
+              <div class="nameInput">Daniel Burke</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
             </div>
 
-            <div class="row">
-              <img src="PlayerImageDB.jpg" class="scoreboardPlayerImage">
-              <form class="nameInput">Bob Evans<input type="tel" name="PlayerOne" class="scoreInput"></form>
+            <div class="row" id="PlayerFour">
+              <img class="imageInput" src="PlayerImageDB.jpg">
+              <div class="nameInput">Daniel Burke</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
             </div>
 
         </div>
 
         <div class="groupContainer"> <!-- Group 2 -->
 
-            <div class="row">
-              <img src="PlayerImageDB.jpg" class="scoreboardPlayerImage">
-              <form class="nameInput">Rowan Joseph<input type="tel" name="PlayerOne" class="scoreInput"></form>
+            <div class="row" id="PlayerFive">
+              <img class="imageInput" src="#">
+              <div class="nameInput">New Player</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
             </div>
 
-            <div class="row">
-              <img src="PlayerImageDB.jpg" class="scoreboardPlayerImage">
-              <form class="nameInput">Tim Stuart<input type="tel" name="PlayerOne" class="scoreInput"></form>
+            <div class="row" id="PlayerSix">
+              <img class="imageInput" src="#">
+              <div class="nameInput">New Player</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
             </div>
 
-            <div class="row">
-              <img src="PlayerImageDB.jpg" class="scoreboardPlayerImage">
-              <form class="nameInput">Dylan Beaumont<input type="tel" name="PlayerOne" class="scoreInput"></form>
+            <div class="row" id="PlayerSeven">
+              <img class="imageInput" src="#">
+              <div class="nameInput">New Player</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
             </div>
 
-            <div class="row">
-              <img src="PlayerImageDB.jpg" class="scoreboardPlayerImage">
-              <form class="nameInput">Player 8<input type="tel" name="PlayerOne" class="scoreInput"></form>
+            <div class="row" id="PlayerEight">
+              <img class="imageInput" src="#">
+              <div class="nameInput">New Player</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
             </div>
 
         </div>
 
         <div class="groupContainer"> <!-- Group 3 -->
 
-            <div class="row">
-              <img src="PlayerImageDB.jpg" class="scoreboardPlayerImage">
-              <form class="nameInput">Player 9<input type="tel" name="PlayerOne" class="scoreInput"></form>
+            <div class="row" id="PlayerNine">
+              <img class="imageInput" src="#">
+              <div class="nameInput">New Player</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
             </div>
 
-            <div class="row">
-              <img src="PlayerImageDB.jpg" class="scoreboardPlayerImage">
-              <form class="nameInput">Player 10<input type="tel" name="PlayerOne" class="scoreInput"></form>
+            <div class="row" id="PlayerTen">
+              <img class="imageInput" src="#">
+              <div class="nameInput">New Player</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
             </div>
 
-            <div class="row">
-              <img src="PlayerImageDB.jpg" class="scoreboardPlayerImage">
-              <form class="nameInput">Player 11<input type="tel" name="PlayerOne" class="scoreInput"></form>
+            <div class="row" id="PlayerEleven">
+              <img class="imageInput" src="#">
+              <div class="nameInput">New Player</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
             </div>
 
-            <div class="row">
-              <img src="PlayerImageDB.jpg" class="scoreboardPlayerImage">
-              <form class="nameInput">Player 12<input type="tel" name="PlayerOne" class="scoreInput"></form>
+            <div class="row" id="PlayerTwelve">
+              <img class="imageInput" src="#">
+              <div class="nameInput">New Player</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
             </div>
 
         </div>
 
+
     </div>
 
     <div class="NavButtonContainer">
-        <img src="submitCheckMark.svg" id="submitCheckMark">
-        <div class="lds-hourglass"></div>
+        <img src="submitCheckMark.svg" class="submitCheckMark Hole1">
+        <div class="lds-hourglass Hole1"></div>
 
         <div class="prevHoleButton">
           <img src="previousArrow.svg" id="previousArrow">
@@ -165,6 +178,129 @@
       </div>
 
 <!-- HOLE 1 END -->
+
+<!-- HOLE 2 START -->
+    <div class="scoreEntryTwo">
+    <div class="HoleDetailsContainer">
+      <div class="ScoreEntryPar">Par 5</div>
+      <img src="parIcon.svg" id="parIcon">
+      <div class="ScoreEntryHoleNo">2</div>
+      <div class="ScoreEntryIndex">Index 18</div>
+      <img src="indexIcon.svg" id="indexIcon">
+      </div>
+
+    <div class="PlayerHeaderContainer">
+      <img src="headerRowGolfPlayer.svg" id="headerRowGolfPlayer">
+      <div class="HeaderRowPlayer">PLAYER</div>
+      <div class="HeaderRowScore">SCORE</div>
+    </div>
+
+    <div class="ScoreEntryContainer">
+
+        <div class="groupContainer"> <!-- Group 1 -->
+
+            <div class="row" id="PlayerOne">
+              <img class="imageInput" src="PlayerImageDB.jpg">
+              <div class="nameInput">Daniel Burke</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
+            </div>
+
+            <div class="row" id="PlayerTwo">
+              <img class="imageInput" src="PlayerImageDB.jpg">
+              <div class="nameInput">Daniel Burke</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
+            </div>
+
+            <div class="row" id="PlayerThree">
+              <img class="imageInput" src="PlayerImageDB.jpg">
+              <div class="nameInput">Daniel Burke</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
+            </div>
+
+            <div class="row" id="PlayerFour">
+              <img class="imageInput" src="PlayerImageDB.jpg">
+              <div class="nameInput">Daniel Burke</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
+            </div>
+
+        </div>
+
+        <div class="groupContainer"> <!-- Group 2 -->
+
+            <div class="row" id="PlayerFive">
+              <img class="imageInput" src="#">
+              <div class="nameInput">New Player</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
+            </div>
+
+            <div class="row" id="PlayerSix">
+              <img class="imageInput" src="#">
+              <div class="nameInput">New Player</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
+            </div>
+
+            <div class="row" id="PlayerSeven">
+              <img class="imageInput" src="#">
+              <div class="nameInput">New Player</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
+            </div>
+
+            <div class="row" id="PlayerEight">
+              <img class="imageInput" src="#">
+              <div class="nameInput">New Player</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
+            </div>
+
+        </div>
+
+        <div class="groupContainer"> <!-- Group 3 -->
+
+            <div class="row" id="PlayerNine">
+              <img class="imageInput" src="#">
+              <div class="nameInput">New Player</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
+            </div>
+
+            <div class="row" id="PlayerTen">
+              <img class="imageInput" src="#">
+              <div class="nameInput">New Player</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
+            </div>
+
+            <div class="row" id="PlayerEleven">
+              <img class="imageInput" src="#">
+              <div class="nameInput">New Player</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
+            </div>
+
+            <div class="row" id="PlayerTwelve">
+              <img class="imageInput" src="#">
+              <div class="nameInput">New Player</div>
+              <input type="tel" name="PlayerOne" class="scoreInput">
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="NavButtonContainer">
+        <img src="submitCheckMark.svg" class="submitCheckMark Hole2">
+        <div class="lds-hourglass Hole2"></div>
+
+        <div class="prevHoleButton">
+          <img src="previousArrow.svg" id="previousArrow">
+          <div class="prevHoleText">Last<br>hole</div></div>
+
+        <div class="nextHoleButton">
+        <div class="nextHoleText">Next<br>hole</div>
+        <img src="nextArrow.svg" id="nextArrow"></div>
+
+        </div>
+
+      </div>
+
+<!-- HOLE 2 END -->
 
 
 
